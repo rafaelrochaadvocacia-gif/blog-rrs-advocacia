@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local cache
+*.cache
+.pytest_cache/
+
+# Capas em rascunho (use "Já usadas" para as publicadas)
+# Nota: as capas individuais NÃO devem estar no git
+# Elas são geradas dinamicamente pelos scripts Python
+areas/*/capas/*.webp
+areas/*/capas/*.png
+areas/*/capas/*.jpg
+
+# Arquivos temporários
+*.tmp
+*.temp
+*.log

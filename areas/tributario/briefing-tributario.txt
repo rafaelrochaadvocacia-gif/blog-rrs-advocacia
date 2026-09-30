@@ -1,0 +1,21 @@
+FRENTE: II - Regularização de dívidas tributárias
+TEMA: A PGFN Avaliou Mal a Capacidade de Pagamento da Sua Empresa? Como Pedir a Revisão da CAPAG e Negociar a Dívida Ativa em Condições Melhores
+PALAVRA-CHAVE: revisão da capacidade de pagamento PGFN
+BASE JURÍDICA: Lei 13.988/2020 (transação na cobrança da dívida ativa da União); Portaria PGFN/ME nº 6.757/2022 - regras da CAPAG e pedido de revisão (art. 29: prazo de 30 dias da ciência; arts. 30 e seguintes: documentos e critérios), feito pelo Regularize em "Negociar Dívida > Revisão da Capacidade de Pagamento" - confirmar redação vigente; serviço oficial gov.br "Pedir revisão de capacidade de pagamento para fins de negociação perante a Fazenda Nacional". Gancho: a adesão ao Edital PGFN nº 6/2026 encerra em 30/09/2026 - quem ficou de fora ainda pode negociar por proposta individual ou nos próximos editais, e a CAPAG é o que define o tamanho do desconto.
+GATILHO: B - lacuna competitiva: concorrentes ranqueiam com conteúdo sobre CAPAG e sobre como justificar à PGFN a capacidade real de pagamento; o blog do RRS não tem nenhum post sobre CAPAG ou sua revisão.
+DATA DA SUGESTÃO: 2026-09-28
+---
+FRENTE: VI - Equiparação hospitalar para clínicas médicas
+TEMA: Clínica Médica Sem Funcionários Pode Ter Equiparação Hospitalar? O Que a Receita Exige Para Reduzir o IRPJ e a CSLL
+PALAVRA-CHAVE: equiparação hospitalar clínica sem funcionários
+BASE JURÍDICA: Lei 9.249/1995, art. 15, § 1º, III, "a", e art. 20 (redação da Lei 11.727/2008: sociedade empresária + normas da Anvisa); Tema Repetitivo 217/STJ (REsp 1.116.399/BA - conta a natureza do serviço, não a existência de internação); Código Civil, art. 966, parágrafo único, e art. 982 (sociedade empresária "de direito e de fato" x profissão intelectual/sociedade simples); IN RFB 1.700/2017, art. 33; RDC Anvisa 50/2002; Soluções de Consulta RFB nº 3.015/2026 e nº 3.051/2026 (esta noticiada como publicada no DOU de 28/09/2026 - confirmar teor), vinculadas à SC Cosit 147/2023; jurisprudência do CARF sobre afastamento da multa qualificada quando a clínica declarou a operação (multa de 75% x 150%) - confirmar acórdãos na pesquisa.
+GATILHO: B - lacuna competitiva: concorrentes ranqueiam com guias específicos sobre "estrutura sem empregados" e "como comprovar os requisitos"; o RRS tem só o guia geral (jun/2026) e o post de riscos (set/2026).
+DATA DA SUGESTÃO: 2026-09-28
+---
+FRENTE: VII - Equiparação hospitalar para clínicas odontológicas
+TEMA: Quais Procedimentos da Sua Clínica Odontológica Podem Pagar Menos IRPJ e CSLL? O Que a Receita Já Admite e o Que o STJ Ainda Vai Decidir
+PALAVRA-CHAVE: equiparação hospitalar dentista procedimentos
+BASE JURÍDICA: Lei 9.249/1995, arts. 15, § 1º, III, "a", e 20; Tema Repetitivo 1.427/STJ (REsp 2.223.487/RS, afetado pela 1ª Seção em mar-abr/2026, com determinação de suspensão dos processos - confirmar alcance e eventual data de julgamento) e Tema 217/STJ; Solução de Consulta Cosit nº 268/2024 e Disit nº 4.045/2024 (admissão das bases reduzidas para determinados procedimentos odontológicos, com segregação de receitas) - confirmar teor; RDC Anvisa 50/2002; Nota Técnica Anvisa nº 2/2024 (procedimentos estéticos). Enfoque: segregação de receitas por procedimento e organização documental enquanto o STJ não julga - sem prever nem prometer o resultado do Tema 1.427.
+GATILHO: B - lacuna competitiva: concorrentes ranqueiam com análises do Tema 1.427 e listas de procedimentos com maior chance de enquadramento; o post do RRS sobre odontologia (jun/2026) só menciona a afetação de passagem e não trata de procedimentos nem de segregação de receitas.
+DATA DA SUGESTÃO: 2026-09-28
+---

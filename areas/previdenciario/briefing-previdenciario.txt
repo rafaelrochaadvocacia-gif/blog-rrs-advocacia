@@ -1,0 +1,7 @@
+FRENTE: IV - BPC/LOAS
+TEMA: Renda Acima do Limite do BPC/LOAS? Veja Como Calcular a Renda da Família e Quais Gastos Podem Ser Descontados
+PALAVRA-CHAVE: renda per capita BPC
+BASE JURÍDICA: Lei 8.742/1993 (LOAS), art. 20, §§ 3º, 11, 11-A e 14, e art. 20-B (redação das Leis 13.982/2020 e 14.176/2021 - dedução de gastos com medicamentos, fraldas, alimentação especial e tratamentos não fornecidos pelo SUS/SUAS; exclusão do cálculo de BPC ou benefício de até 1 salário mínimo recebido por outro idoso ou pessoa com deficiência da família); STF, RE 567.985 e Rcl 4.374 (o critério de 1/4 do salário mínimo não é absoluto); STJ, Tema Repetitivo 185 (REsp 1.112.557/MG - miserabilidade pode ser provada por outros meios); referência 2026: 1/4 do salário mínimo = R$ 405,25 - confirmar valores e redação vigente na pesquisa.
+GATILHO: B - lacuna competitiva: concorrentes (de Juiz de Fora e nacionais) ranqueiam com guias e calculadoras de renda per capita do BPC; o RRS tem guias gerais (idoso, PcD, autismo, bloqueado), mas nenhum sobre o cálculo da renda familiar e as deduções.
+DATA DA SUGESTÃO: 2026-09-28
+---

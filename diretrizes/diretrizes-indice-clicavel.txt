@@ -1,0 +1,85 @@
+DIRETRIZES DO SUMÁRIO DOS ARTIGOS DO BLOG
+Escritório Rafael Rocha e Santos Advocacia
+Criado em 2026-09-21 — REESCRITO em 2026-09-22 (ver "HISTÓRICO" no final)
+Vale para TODAS as tarefas de criação de artigo do blog (tributário, família,
+previdenciário, isenção de IR).
+
+====================================================================
+REGRA
+====================================================================
+Todo artigo com 4 ou mais H2 leva um SUMÁRIO no topo. Use o elemento
+NATIVO do Wix Blog ("Sumário", no painel Adicionar do editor), que no Ricos
+é um nó do tipo TOC. NÃO monte índice à mão.
+
+Por que nativo: o Wix gera e atualiza a lista sozinho a partir dos headings
+do artigo. Se um título for renomeado, reordenado ou removido depois, o
+sumário acompanha. Um índice feito à mão desatualiza silenciosamente e ainda
+exige âncora manual em cada item.
+
+====================================================================
+COMO INSERIR (via API)
+====================================================================
+Insira UM único nó, depois da introdução e ANTES do primeiro H2:
+
+{
+  "type": "TOC",
+  "id": "sumario",
+  "nodes": [],
+  "tocData": {
+    "includedHeadings": [2, 3],
+    "listStyle": "NUMBERED",
+    "indentation": "NESTED"
+  }
+}
+
+E um parágrafo vazio logo depois dele, para respiro.
+
+É só isso. Não crie parágrafo de título ("Neste artigo você vai encontrar:"),
+não crie lista com marcadores, não crie link nenhum: o Wix monta tudo.
+
+Posição: depois da assinatura e dos 1–2 parágrafos de abertura, antes do
+primeiro H2.
+
+====================================================================
+OS CAMPOS DE tocData (confirmados no schema do Ricos em 22/09/2026)
+====================================================================
+includedHeadings — array de níveis de heading que entram no sumário.
+    Padrão do Wix: [1,2,3,4,5,6]. Usamos [2,3]: as seções principais (H2) e,
+    aninhadas sob elas, as perguntas do FAQ (H3). O H1 fica de fora porque é
+    o título do post e não é seção.
+listStyle — PLAIN (padrão) | NUMBERED | LETTERS | ROMAN | BULLETED |
+    ALPHABETICAL_INDEX | ALPHABETICAL_INDEX_COMPACT.
+    Usamos NUMBERED: numera 1, 2, 3... e as sub-perguntas como 9.1, 9.2...
+indentation — NESTED (padrão) | FLAT. Usamos NESTED, para o FAQ aparecer
+    recuado sob "Perguntas Frequentes".
+fontSize, itemSpacing, color — opcionais. NÃO defina: deixe o sumário herdar
+    o estilo do blog, para não destoar do resto do site.
+
+====================================================================
+VERIFICAÇÃO ANTES DE CRIAR O RASCUNHO
+====================================================================
+1. Existe exatamente UM nó type "TOC" no documento.
+2. Ele está depois da introdução e antes do primeiro HEADING de nível 2.
+3. Não sobrou nenhum índice manual no artigo (parágrafo "Neste artigo você
+   vai encontrar:", lista de marcadores com links internos, decorations de
+   LINK com campo "anchor"). Se encontrar qualquer um, REMOVA — dois sumários
+   no mesmo artigo é erro.
+4. O artigo tem 4 ou mais H2. Se tiver menos, não insira o sumário.
+
+====================================================================
+HISTÓRICO — POR QUE ISTO FOI REESCRITO
+====================================================================
+A primeira versão destas diretrizes (21/09/2026) mandava montar o índice à
+mão: parágrafo em negrito + lista com marcadores + um link por item usando
+decoration de LINK com o campo "anchor" apontando para o id do nó do heading.
+Aquilo funcionava, mas era trabalho manual e frágil.
+
+Em 22/09 o Rafael apontou que o Wix já tem o elemento Sumário pronto no
+painel Adicionar do editor. É melhor em tudo: um nó só, sem âncora manual, e
+se atualiza sozinho quando os títulos mudam. O índice manual está proibido a
+partir daqui.
+
+Observação para quem for mexer nisto depois: o campo "anchor" do Ricos
+(linkData.link.anchor apontando para o id de um nó) existe e funciona — foi
+testado e confirmado. Só não é mais necessário para sumário. Pode ser útil
+se um dia precisarmos linkar de um ponto do texto para uma seção específica.

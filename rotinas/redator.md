@@ -185,10 +185,29 @@ e um JSON-LD de Article (headline, description, keywords, author = autor da áre
 Rocha e Santos Advocacia, inLanguage pt-BR) como tag `script` com `props.type = "application/ld+json"`.
 Indexação permitida. Excerpt = meta description.
 
-### P7. Criar o rascunho
+### P7. Criar o rascunho e a capa
 
-`POST https://www.wixapis.com/blog/v3/draft-posts` (confirme na documentação do Wix) com title = H1,
-excerpt, memberId e richContent. Depois faça PATCH do seoData e do seoSlug. **Não publique.**
+1. **Rascunho:** `POST https://www.wixapis.com/blog/v3/draft-posts` (confirme na documentação do Wix)
+   com title = H1, excerpt, memberId e richContent. Depois faça PATCH do seoData e do seoSlug.
+   **Não publique.**
+2. **Gerar a capa:** `python3 scripts/cover_gen.py "<H1>" "areas/<ÁREA>/capas/capa-<slug>.webp"`
+   (o `<slug>` é exatamente o seoSlug). Sem o arquivo da logo (`Logo final RRS fundado azul marinho .png`)
+   na raiz do repositório, a capa sai sem o monograma: avise no relatório.
+3. **Enviar a capa ao Wix** (método testado em 09/11/2026; **nunca** use UploadImageToWixSite passando
+   o caminho do arquivo, porque o Wix não lê o caminho e a imagem chega corrompida):
+   - Pelo ExecuteWixAPI: `POST https://www.wixapis.com/site-media/v1/files/generate-upload-url` com
+     `{"mimeType": "image/webp", "fileName": "capa-<slug>.webp", "private": false}` e guarde o `uploadUrl`.
+   - Pelo terminal: `curl -sS -X PUT -H "Content-Type: image/webp" --data-binary @areas/<ÁREA>/capas/capa-<slug>.webp "<uploadUrl>?filename=capa-<slug>.webp"`.
+     A resposta traz `file.id` (ex.: `7e94f7_...~mv2.webp`), `operationStatus` (READY) e `hash`.
+   - Confira que `hash` é igual ao `md5sum` do arquivo local. Se for diferente, ou se o upload falhar
+     (por exemplo, 403 de rede), não insista: deixe a capa no repositório e avise no relatório.
+4. **Definir como imagem de capa do post** (aparece no feed do blog): PATCH
+   `https://www.wixapis.com/blog/v3/draft-posts/{id}`, sem `action`, com
+   `{"draftPost": {"id": "<id>", "memberId": "<memberId>", "media": {"wixMedia": {"image": {"id": "<file.id>"}}, "displayed": true, "custom": true}}}`.
+5. **Imagem no topo do texto:** insira um nó IMAGE como 1º nó do richContent (antes da assinatura),
+   com `imageData.image.src.id = <file.id>`, `width 1080`, `height 1350`, `altText` = palavra-chave e
+   `containerData` centralizado. Confira o formato do nó IMAGE no recipe "Author Ricos Rich Content"
+   da documentação do Wix e envie o richContent completo num PATCH sem `action`.
 
 ### P8. Revisão automática e snapshot
 
@@ -203,12 +222,10 @@ excerpt, memberId e richContent. Depois faça PATCH do seoData e do seoSlug. **N
 4. Grave o JSON final em `revisoes/<slug>.revisao.json`.
 5. Rode de novo com `modo "snapshot_rascunho"` e grave o `markdown` em `revisoes/<slug>.rascunho.md`.
 
-### P9. Capa
+### P9. Capa (conferência)
 
-`python3 scripts/cover_gen.py "<H1>" "areas/<ÁREA>/capas/capa-<slug>.webp"`. O `<slug>` é exatamente
-o seoSlug. Não envie a capa ao Wix por API. Ela fica no repositório para o Rafael baixar e definir como
-"Imagem de capa" do post. Se o arquivo da logo (`Logo final RRS fundado azul marinho .png`) não
-estiver na raiz do repositório, a capa sai sem o monograma: avise no relatório.
+A capa já foi gerada, enviada e definida no P7. Confirme que os avisos F4 (imagem no topo) e F5
+(capa do post) do revisor não aparecem. O arquivo também fica em `areas/<ÁREA>/capas/`.
 
 ### P10. Arquivar capas e calibração (SEMPRE, mesmo sem artigo novo)
 
@@ -239,10 +256,12 @@ Se o push falhar por rede, tente de novo até 4 vezes (esperando 2, 4, 8 e 16 se
 
 ### P12. Relatório (resposta final, curta)
 
-- **Artigo:** pauta (FRENTE e gatilho A ou B), título, palavra-chave, id do rascunho, ficha de
-  variação escolhida e link da capa no GitHub
-  (`https://github.com/rafaelrochaadvocacia-gif/blog-rrs-advocacia/blob/main/areas/<ÁREA>/capas/capa-<slug>.webp`).
-  Lembre o Rafael de defini-la como "Imagem de capa".
+- **Artigo:** pauta (FRENTE e gatilho A ou B), título, palavra-chave, id do rascunho e ficha de
+  variação escolhida.
+- **Capa:** se foi enviada ao Wix e definida como imagem de capa (com o `file.id`). Se não foi, o
+  motivo e o link no GitHub
+  (`https://github.com/rafaelrochaadvocacia-gif/blog-rrs-advocacia/blob/main/areas/<ÁREA>/capas/capa-<slug>.webp`),
+  para o Rafael definir à mão.
 - **Revisão automática:** status, nota, rodadas de correção, bloqueios restantes, avisos e quantas
   citações jurídicas foram conferidas.
 - **Humanização:** palavras em comum com artigos recentes (H7) e variação do ritmo (H3).

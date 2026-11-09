@@ -129,9 +129,9 @@ Só ligar quando as duas condições forem verdadeiras:
 Quando ligada, depois do R3 a rotina:
 
 1. Só segue com **APROVADO** ou **APROVADO_COM_AVISOS**, sem avisos de humanização pendentes, e com
-   a capa definida. **Pendência a resolver antes de ligar:** hoje a capa não vai ao Wix por API (ela
-   fica no repositório, em `areas/<área>/capas/`). Na fase 2, a rotina precisa definir a capa no
-   post, senão o artigo vai ao ar sem imagem no feed.
+   a capa definida (aviso F5 resolvido). Desde 09/11/2026 a rotina envia a capa ao Wix e a define como
+   imagem de capa do post (`rotinas/redator.md`, passo P7). O endereço `upload.wixmp.com` foi
+   liberado na rede do ambiente Default para isso.
 2. Agenda a publicação para **48h depois, às 9h (horário de Brasília)**:
    `PATCH https://www.wixapis.com/blog/v3/draft-posts/{id}` com
    `{ "draftPost": { "id": "<id>", "memberId": "<memberId>" }, "action": "UPDATE_SCHEDULE", "scheduledPublishDate": "<data ISO>" }`

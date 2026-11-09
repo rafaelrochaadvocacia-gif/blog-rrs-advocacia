@@ -1,0 +1,132 @@
+# Imóvel Após o Divórcio Aluguel Ex-Cônjuge: Quem Mora com os Filhos no Imóvel do Outro Paga? O Que o STJ Decidiu (2026)
+
+[[IMAGEM: imóvel após o divórcio aluguel ex-cônjuge]]
+
+_Por Dra. Fernanda A. Santos Rocha, Advogada de Direito de Família – OAB/MG 199.347._
+
+Em 4 de novembro de 2026, o Superior Tribunal de Justiça (STJ) divulgou uma decisão da Terceira Turma que responde a uma dúvida que ouvimos com frequência depois de uma separação: quem continua morando no imóvel do outro, junto com os filhos, precisa pagar aluguel? Quem pesquisa imóvel após o divórcio aluguel ex-cônjuge costuma estar exatamente nesse ponto, entre o receio de ser cobrado e a sensação de ser privado de um bem que é só seu.
+
+Se você é dono de um imóvel comprado antes do casamento, ou é quem permanece nele com as crianças, este texto é para você. Ele mostra o que o STJ decidiu, o que a notícia oficial não diz, como a presença dos filhos muda a conta e quais cuidados evitam que uma conversa difícil vire um processo desnecessário.
+
+[[SUMARIO]]
+
+## Imóvel Após o Divórcio Aluguel Ex-Cônjuge: O Que o STJ Decidiu em 4 de Novembro de 2026
+
+A Terceira Turma estabeleceu que não cabe cobrança de aluguel pelo uso do imóvel por um dos ex-cônjuges quando a residência pertence só ao outro, por ter sido comprada antes do casamento em comunhão parcial (o chamado bem incomunicável), mas é compartilhada com os filhos em comum. A relatora foi a ministra Nancy Andrighi, e a [notícia oficial do tribunal](https://www.stj.jus.br/sites/portalp/paginas/comunicacao/noticias/2026/04112026-ex-conjuge-que-mora-com-os-filhos-no-imovel-do-outro-nao-precisa-pagar-aluguel.aspx) está no portal do STJ.
+
+O caso nasceu de um divórcio litigioso. A primeira instância fixou guarda compartilhada e pensão alimentícia e deixou de fora da partilha o imóvel que o marido comprou pouco antes de casar. Mesmo assim, depois da separação, a casa seguiu como moradia da ex-mulher e dos filhos. Ela foi condenada a pagar aluguel ao ex-marido desde a data de uma notificação extrajudicial em que ele manifestou discordância do uso. O tribunal de origem manteve a condenação, por entender que ela não era coproprietária, apenas copossuidora durante a união. O STJ afastou a cobrança.
+
+Nas palavras da relatora, segundo a notícia do tribunal, “não se justifica o arbitramento de aluguéis nem se configura enriquecimento sem causa, justamente porque a utilização do imóvel atende ao dever de sustento que incumbe a ambos os genitores”.
+
+Um cuidado importante: o processo corre em segredo de justiça, e o tribunal não divulgou o número. O que temos em mãos é a notícia oficial, não o acórdão. Por isso, tratamos aqui a tese como o STJ a apresentou, sem inventar detalhes que só o inteiro teor revelaria.
+
+## O Que Significa Imóvel Incomunicável e Por Que Ele Fica Fora da Partilha
+
+Em linguagem clara: no regime da comunhão parcial de bens, o mais comum no Brasil, o que cada um já tinha antes do casamento continua sendo só dele. Um apartamento comprado aos 28 anos por quem se casou aos 31 não vira metade de ninguém no divórcio. Em regra, também ficam de fora o que se recebe por herança ou doação. Explicamos essa divisão com calma no nosso guia sobre [partilha de bens no divórcio](https://www.rochaesantosadvocacia.com.br/post/partilha-de-bens-no-div%C3%B3rcio).
+
+Que o imóvel era incomunicável ninguém discutia. A pergunta era outra: ser dono exclusivo dá o direito de cobrar aluguel de quem segue morando ali com os filhos? Para o STJ, nesse cenário, não.
+
+Ser dono sozinho de um imóvel não desfaz o dever de sustento, que cabe aos dois pais. Essa é a ideia que sustenta a decisão.
+
+## Quando Há Aluguel Entre Ex-Cônjuges e Por Que a Presença dos Filhos Muda o Cenário
+
+Segundo a notícia, a jurisprudência do STJ admite uma indenização, equivalente à quota-parte de um aluguel presumido, quando apenas um dos ex-cônjuges usa o imóvel comum e impede o outro de aproveitar o bem. Nesses casos não se aplica a Lei do Inquilinato. Existe uma compensação pelo uso exclusivo, para evitar enriquecimento sem causa, e a Segunda Seção entende que ela pode ser cobrada mesmo com a partilha ainda pendente.
+
+Com filhos morando na casa, o raciocínio muda. Em julho de 2024, a Terceira Turma decidiu, no [REsp 2.082.584](https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2024/16072024-Mulher-que-mora-com-a-filha-nao-tera-de-indenizar-ex-marido-pelo-uso-de-imovel-comum.aspx), que uma mulher que vivia com a filha no imóvel comum não devia aluguéis ao ex-marido, porque a presença da filha afasta a posse exclusiva. Em 2021, a Quarta Turma chegou a conclusão parecida no [REsp 1.699.013](https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/05052021-Ex-marido-que-mora-com-a-filha-no-imovel-comum-nao-e-obrigado-a-pagar-alugueis-a-ex-mulher.aspx), em que era o pai quem morava com a filha na casa dividida entre os ex-cônjuges. Nesse julgado, o relator, ministro Luis Felipe Salomão, lembrou que a indenização por uso exclusivo se apoia nos arts. 1.319 e 1.326 do Código Civil.
+
+O que decide, portanto, não é quem consta na matrícula. É saber se existe uso exclusivo. Com as crianças na casa, o STJ entende que o uso beneficia os dois pais, e não apenas quem dorme ali.
+
+A ministra Nancy Andrighi também pediu atenção à vulnerabilidade do genitor que mora com os filhos e arca com a maior parte das despesas. Quem cede o espaço, lembrou ela, tem um proveito indireto: garante aos filhos o direito a uma moradia digna.
+
+## Moradia dos Filhos e Pensão Alimentícia: O Que a Decisão Deixa em Aberto
+
+A decisão afirma que o fato de o imóvel servir de moradia aos filhos tem a possibilidade de converter a indenização em parcela _in natura_ da prestação de alimentos, o que poderá ser apurado em ação própria. Alimentos _in natura_ são os pagos em bens ou utilidades, como a moradia, em vez de dinheiro. O Código Civil, no art. 1.701, prevê que a pensão pode ter essa forma.
+
+Na prática, quem cede a casa para os filhos viverem já contribui para o sustento deles, e isso pode ser levado em conta quando a pensão for fixada ou revisada. Nada disso é automático, e nada se resolve no mesmo processo em que o aluguel foi discutido.
+
+Há um limite que merece atenção. Em 2024, o STJ lembrou que, de regra, não é lícito alterar unilateralmente a forma de pagar os alimentos, de dinheiro para moradia. Quem paga pensão não pode, por conta própria, descontar o valor da casa. A mudança excepcional depende de decisão ou de acordo.
+
+A notícia também não trata do que acontece quando os filhos deixam o imóvel. A lógica do julgado se apoia na presença deles. É razoável imaginar que a conversa sobre aluguel possa voltar se o ex-cônjuge passar a ocupar a casa sozinho, mas isso não foi decidido e dependeria do caso concreto.
+
+## Simulação Hipotética: A Mesma Casa, Com e Sem os Filhos Morando Nela
+
+Veja uma **situação hipotética, apenas para ilustrar**; valores reais variam conforme o caso e a análise individual.
+
+Marcos comprou um apartamento em 2014, antes de se casar com Helena em comunhão parcial. Divorciados, eles têm dois filhos, de 9 e 12 anos, e guarda compartilhada. Um corretor estimou o aluguel de mercado do apartamento em R$ 2.800 por mês. Comparamos duas realidades possíveis para a mesma casa.
+
+| Critério | Cenário A: Helena e os filhos moram no apartamento | Cenário B: os filhos vão morar com Marcos e Helena fica sozinha no apartamento |
+| Uso exclusivo? | Não, o uso é compartilhado com as crianças | Sim, a premissa da decisão do STJ não está presente |
+| O que a decisão do STJ indica | Sem aluguel: a moradia atende ao dever de sustento dos dois pais | A decisão não analisou esse quadro; Marcos pode discutir cobrança ou a devolução do imóvel |
+| Aluguel presumido de referência | Não cobrado de Helena (os R$ 2.800 ficam fora da conta) | Em tese, R$ 2.800 por mês (R$ 33.600 por ano), como valor em debate, não como resultado |
+| Onde a conversa se desloca | Para a pensão alimentícia, em ação própria ou acordo | Para a prova, o acordo e o que o juiz entender no caso |
+
+O registro do imóvel é idêntico nos dois quadros. O que muda é quem usa a casa. No cenário A, a cobrança tende a esbarrar na decisão do STJ. No cenário B, a discussão fica aberta e depende da prova e do que ficou combinado. Nenhum dos números acima é previsão de resultado.
+
+## O Que Muda para Quem É Dono do Imóvel Particular
+
+- Cobrar aluguel de quem mora com os filhos no imóvel tende a ser um caminho fechado, segundo a tese do STJ.
+- A notificação extrajudicial, por si só, não muda isso: no caso julgado, a cobrança foi fixada desde a data da notificação e mesmo assim foi afastada.
+- A moradia cedida aos filhos pode ser considerada na pensão, mas em ação própria, e não por desconto unilateral.
+- A decisão trata de aluguel. Ela não discute a titularidade do imóvel, que continua sendo de quem o comprou.
+
+Na prática, o caminho mais produtivo costuma ser um acordo por escrito: até quando as crianças permanecem na casa, quem paga IPTU, condomínio e manutenção, e o que acontece quando a situação mudar. Para quem tem patrimônio a proteger, previsibilidade vale mais do que uma disputa longa.
+
+## O Que Muda para Quem Fica no Imóvel com as Crianças
+
+A decisão protege a moradia dos filhos. Ela não é um cheque em branco para quem permanece no imóvel. Conservar a casa, manter as contas em dia e preservar um diálogo respeitoso com o outro genitor continuam sendo parte do que se espera de quem ocupa um bem alheio por causa dos filhos.
+
+Nenhuma discussão sobre imóvel deve ser usada para pressionar o outro genitor, restringir a convivência ou afastar as crianças. A moradia e o convívio caminham juntos, e o interesse delas vem primeiro.
+
+Se houver violência doméstica ou risco para você ou para as crianças, a prioridade é a proteção: procure a Delegacia, ligue para o 190 ou para a Central de Atendimento à Mulher (180) antes de qualquer conversa sobre o imóvel. A questão patrimonial pode ser tratada depois, com apoio jurídico.
+
+## Box do Especialista: O Erro Que Mais Vemos Quando o Imóvel É de Um Só
+
+_Por Dra. Fernanda A. Santos Rocha, OAB/MG 199.347 — Juiz de Fora e todo o Brasil._
+
+O erro mais comum é a combinação verbal. O dono deixa o ex-cônjuge e os filhos na casa “por enquanto”, ninguém escreve nada e, dois anos depois, chega uma notificação cobrando aluguel. Do outro lado, às vezes quem mora no imóvel deixa de pagar o IPTU achando que a casa passou a ser sua. Sem documento, cada um se lembra de um prazo diferente, e a conversa que era de família vira disputa de versões.
+
+Evita-se isso escrevendo. Quem fica no imóvel, até quando, quem paga cada despesa e como a moradia será considerada na pensão. Vale ainda registrar o estado do imóvel e guardar os comprovantes. É pouco trabalho diante do custo de reconstituir uma história que nunca foi anotada.
+
+## Por Que Contar com uma Advogada Especialista em Divórcio e Partilha de Bens
+
+Decisões sobre imóvel após o divórcio, aluguel ex-cônjuge e moradia dos filhos têm contornos finos. Entre o uso exclusivo e o uso compartilhado com os filhos, entre o imóvel particular e o comum, entre a moradia como sustento e a pensão em dinheiro, uma palavra mal escolhida num acordo muda o resultado. Quem negocia sozinho corre o risco de assinar uma cláusula que contraria a própria intenção, de pedir um aluguel que não cabe ou de deixar a pensão e a moradia sem coerência entre si.
+
+O escritório Rafael Rocha e Santos Advocacia atua com [divórcio e partilha de bens em Juiz de Fora](https://www.rochaesantosadvocacia.com.br/advogada-divorcio-juiz-de-fora), com atendimento presencial em Juiz de Fora e online para todo o Brasil, sempre com discrição e sem estimular litígio. Quem quer o quadro completo antes de decidir também encontra o nosso guia sobre [como fazer divórcio com bens, empresa ou filhos](https://www.rochaesantosadvocacia.com.br/post/como-fazer-div%C3%B3rcio). Não prometemos resultados, porque cada situação depende da análise individual.
+
+## Perguntas Frequentes sobre Aluguel e Moradia dos Filhos após o Divórcio
+
+### O ex-cônjuge que mora com os filhos no meu imóvel precisa me pagar aluguel?
+
+Segundo a decisão da Terceira Turma divulgada em 4 de novembro de 2026, não, quando o imóvel é compartilhado com os filhos em comum, porque não há uso exclusivo. Cada caso depende da análise individual.
+
+### E se o imóvel foi comprado depois do casamento?
+
+A notícia trata de bem incomunicável, mas o raciocínio sobre uso exclusivo e presença dos filhos já apareceu em julgados de 2021 e 2024 sobre imóvel comum. Nesse caso, a partilha e a quota de cada um entram na discussão.
+
+### Enviar uma notificação extrajudicial garante o direito de cobrar aluguel?
+
+Não, por si só. No caso julgado, a cobrança tinha começado na data da notificação e foi afastada pelo STJ. A notificação registra a posição de quem a envia, mas não cria direito a aluguel quando os filhos vivem no imóvel.
+
+### Quando os filhos saírem de casa, o aluguel pode voltar a ser discutido?
+
+A decisão não responde a isso. Como o argumento se apoia na presença dos filhos, a discussão pode reaparecer se o ex-cônjuge passar a ocupar o imóvel sozinho, mas depende do caso, da prova e do que foi combinado.
+
+### Posso descontar da pensão o fato de os meus filhos morarem no meu imóvel?
+
+Não por conta própria. De regra, a forma de pagar os alimentos não se altera de modo unilateral, e a moradia só pode ser considerada por acordo ou em ação própria.
+
+### Existe prazo para resolver essa questão?
+
+A decisão não fixa prazo. O que existe é a conveniência de combinar tudo por escrito antes que a ocupação se prolongue sem regras. Não há urgência legal que obrigue a decidir hoje.
+
+## Conclusão: Ser Dono do Imóvel Não Desfaz o Dever de Sustento Que os Dois Têm
+
+Em matéria de imóvel após o divórcio aluguel ex-cônjuge, o STJ deixou claro, na decisão de 4 de novembro de 2026, que o aluguel não acompanha automaticamente a propriedade: quando os filhos moram no imóvel, o uso beneficia os dois pais e a cobrança perde o fundamento. Isso protege as crianças e dá previsibilidade a quem fica na casa, sem retirar de ninguém o direito sobre o bem.
+
+Não há prazo legal correndo contra você, e isso é bom: a decisão pede serenidade. O primeiro passo costuma ser uma conversa com orientação, para entender em qual dos cenários você está e que acordo faz sentido para a sua família.
+
+**Converse com uma especialista em Direito de Família, com discrição, sem compromisso.**
+
+[[BOTAO: Falar com uma Especialista no WhatsApp]]
+
+Escritório Rafael Rocha e Santos Advocacia. Seu Direito. Nossa Luta!

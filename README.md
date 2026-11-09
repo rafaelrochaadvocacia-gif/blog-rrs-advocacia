@@ -8,7 +8,9 @@ Repositório centralizado de tarefas agendadas para criação de artigos jurídi
 blog-rrs-advocacia/
 ├── scripts/
 │   ├── cover_gen.py           # Gera capas de blog (1080x1350, estilo RRS)
-│   └── arquivar_capas.py      # Organiza capas: rascunho vs publicado
+│   ├── arquivar_capas.py      # Organiza capas: rascunho vs publicado
+│   ├── revisar_rascunho.js    # Revisor automático do rascunho (roda no ExecuteWixAPI)
+│   └── calibracao.py          # Mede quanto o rascunho foi alterado antes de publicar
 ├── areas/
 │   ├── isencao-ir/
 │   │   ├── briefing-isencao-ir.txt
@@ -23,6 +25,8 @@ blog-rrs-advocacia/
 │       ├── briefing-familia.txt
 │       └── capas/
 ├── diretrizes/
+│   ├── guia-de-estilo-casa.md     # Curadoria dos 30 últimos artigos: como a casa escreve
+│   ├── revisao-automatica.md      # Procedimento de revisão automática (Fase 1 / Fase 2)
 │   ├── diretrizes-bpc.txt
 │   ├── diretrizes-aposentadoria-especial.txt
 │   └── diretrizes-indice-clicavel.txt
@@ -76,9 +80,20 @@ DATA DA SUGESTÃO: 2026-09-04
 ## 🚀 Fluxo de Criação de Artigos
 
 1. **Pesquisa de monitoramento** (segunda-feira) → Gera pauta no `briefing-<area>.txt`
-2. **Rotina agendada** (sexta-feira para isenção de IR) → Lê primeira pauta e cria artigo em **RASCUNHO** no Wix
-3. **Revisão manual** (Rafael) → Revisa, ajusta, publica no blog
-4. **Organização** (automática) → Capa é movida para "Já usadas" quando post é publicado
+2. **Rotina agendada** (segunda: tributário; sexta: isenção de IR) → Lê o guia de estilo da casa e os últimos diffs de calibração, pesquisa e registra as fontes oficiais, cria o artigo em **RASCUNHO** no Wix
+3. **Revisão automática** → `revisar_rascunho.js` confere cerca de 50 itens (estrutura, OAB, SEO, fontes jurídicas); a rotina corrige os bloqueios (até 2 rodadas)
+4. **Revisão do Rafael** (Fase 1) → Ajusta se quiser e publica
+5. **Calibração** (automática) → `calibracao.py` compara o rascunho entregue com o publicado; 6 artigos seguidos com 95%+ de texto igual liberam a Fase 2
+6. **Organização** (automática) → Capa é movida para "Já usadas" quando post é publicado
+
+## 🤖 Automação: Fase 1 e Fase 2
+
+Detalhes em [`diretrizes/revisao-automatica.md`](diretrizes/revisao-automatica.md).
+
+- **Fase 1 (ativa):** rascunho já revisado automaticamente; o Rafael publica.
+- **Fase 2 (não ativa):** se o revisor aprovar, a rotina agenda a publicação para 48h depois e o Rafael só veta se quiser. Liga quando `python3 scripts/calibracao.py status --csv revisoes/calibracao.csv` disser **PRONTO PARA A FASE 2** e o Rafael autorizar.
+
+As rotinas trabalham na pasta `Logo final/capas-blog/` do computador do Rafael. Copie para lá `diretrizes/guia-de-estilo-casa.md`, `diretrizes/revisao-automatica.md`, `scripts/revisar_rascunho.js` e `scripts/calibracao.py`, e crie a subpasta `revisoes/`.
 
 ## 🐍 Scripts Python
 
@@ -128,4 +143,4 @@ Quando adicionar uma nova área de direito:
 
 ---
 
-*Última atualização: 2026-09-30*
+*Última atualização: 2026-11-09*

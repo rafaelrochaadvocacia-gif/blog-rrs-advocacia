@@ -14,6 +14,10 @@ reais, e é a base do revisor automático (`scripts/revisar_rascunho.js`).
 
 **Manutenção:** refazer a curadoria **uma vez por mês** (ver seção 15).
 
+> **Leia junto a seção 16 (Humanização).** Este guia descreve a *identidade* da casa, não um
+> molde para preencher. A estrutura e o tom são fixos; as palavras, as aberturas, os formatos e os
+> títulos devem mudar de um artigo para outro. Artigo que parece copiado do anterior soa como robô.
+
 ---
 
 ## 1. O artigo da casa em números
@@ -59,7 +63,7 @@ Divergências com a skill `artigos-juridicos-seo` (vale a tabela acima):
 - Nos artigos publicados, o nome da Fernanda aparece de três jeitos ("Fernanda Santos",
   "Fernanda A. Santos Rocha" e com ou sem "Rocha"). **Padronize em "Fernanda A. Santos Rocha"**.
 
-## 3. Esqueleto obrigatório (nesta ordem)
+## 3. Esqueleto (a ordem é fixa; os títulos abaixo são só exemplos, redija os seus)
 
 ```
 [Imagem de capa no topo do corpo — alt text = palavra-chave]
@@ -94,11 +98,12 @@ Regras de forma que o revisor automático **bloqueia** se faltarem:
 - Um único botão de WhatsApp e nenhum link de WhatsApp no texto.
 - A tagline como último bloco, em texto simples, sem `######`.
 
-## 4. Abertura — a fórmula de três tempos
+## 4. Abertura — dor, alívio e para quem é
 
-21 dos 30 artigos abrem com **uma pergunta que é a dor do leitor**, escrita como o leitor pensaria.
-Em seguida vem o **alívio** ("A boa notícia é que...") e, por fim, **para quem é o texto e o que ele
-cobre**. A palavra-chave exata precisa aparecer no 1º parágrafo.
+A lógica é sempre a mesma: **a dor do leitor**, depois **o alívio** (existe um caminho) e, por fim,
+**para quem é o texto e o que ele cobre**. A palavra-chave exata precisa aparecer no 1º parágrafo.
+21 dos 30 artigos abriram com uma pergunta e 22 usaram "A boa notícia é que...". Funciona, mas virou
+fórmula: **alterne o tipo de abertura** (cardápio na seção 16).
 
 Trechos-modelo (reais):
 
@@ -160,7 +165,7 @@ Presente em todos os 15 artigos recentes. Sempre:
 Na isenção de IR, **calcule o imposto faixa a faixa** pela tabela progressiva vigente e diga a
 alíquota efetiva. Nunca aplique 27,5% sobre o valor cheio.
 
-## 7. Box do Especialista
+## 7. Box do Especialista (o formato varia: ver seção 16)
 
 - H2: "Box do Especialista: O Que Só Quem Vive o Dia a Dia **do Tribunal / do INSS / das Perícias /
   da Negociação com a PGFN** Sabe". Na família: "O Que a Prática no Direito de Família Ensina".
@@ -193,10 +198,9 @@ serviço], com atendimento presencial em Juiz de Fora e online para todo o Brasi
   "Uma Negativa Não Encerra o Seu Direito", "A Janela se Fecha em <data>".
 - Dois parágrafos: recapitula o direito e a urgência **legítima** (prazo legal real: prescrição,
   decadência, prazo de edital); depois, o primeiro passo de baixa fricção.
-- Frase de chamada **em negrito**, logo antes do botão:
-  - Padrão: **"Fale agora com um especialista e entenda os próximos passos do seu caso, sem compromisso."**
-  - Família (Fernanda): **"Converse com uma especialista em Direito de Família e entenda os próximos
-    passos do seu caso, sem compromisso."**
+- Frase de chamada **em negrito**, logo antes do botão. Varie entre artigos (opções na seção 16).
+  A mais usada é **"Fale agora com um especialista e entenda os próximos passos do seu caso, sem
+  compromisso."**; na família, **"Converse com uma especialista em Direito de Família..."**.
 - Um único **botão nativo** (nó BUTTON): "Falar com um Especialista no WhatsApp" (ou "com uma
   Especialista" nos artigos da Fernanda), apontando para
   `https://wa.me/5532998169291?text=Olá, estava lendo o artigo "<TÍTULO>" e gostaria de mais informações.`
@@ -277,3 +281,116 @@ com outros advogados e casos reais identificáveis.
 ### Histórico
 
 - **09/11/2026:** primeira curadoria (30 artigos, de 10/07 a 16/10/2026).
+- **09/11/2026:** seção 16 (humanização) e verificações H1 a H7 no revisor.
+
+## 16. Humanização — variar sem perder a identidade
+
+O leitor (e o Google) percebe quando todos os artigos saem da mesma forma. A análise dos 30 artigos
+mostrou o problema na prática: o artigo de **Espondiloartrose repete 895 palavras** em trechos
+idênticos a artigos anteriores, e o de **Hepatopatia, 504**. Há aberturas iguais ("Você recebeu o
+diagnóstico de..."), simulações com o mesmo texto e os mesmos subtítulos ("Como Funciona o Processo na
+Prática", "Box do Especialista — o Que Só Quem Vive o Dia a Dia do Tribunal Sabe") em quase todos.
+
+### 16.1 O que é fixo (identidade) e o que muda
+
+| FIXO, nunca muda | MUDA a cada artigo |
+|---|---|
+| Ordem das seções do esqueleto (seção 3) | A redação de todos os subtítulos H2 |
+| Assinatura do autor com OAB | O tipo de abertura (16.2) |
+| Tom: você, autoridade serena, empatia, honestidade técnica | O formato da simulação (16.3) |
+| Regras da OAB e linguagem de possibilidade | O formato do Box do Especialista (16.4) |
+| Box, FAQ, Conclusão e o prefixo "Conclusão:" | O complemento dos títulos do Box e da Conclusão |
+| Botão de WhatsApp e tagline final | A frase de chamada antes do botão (16.5) |
+| Palavra-chave nos lugares de SEO | Quais fórmulas da casa aparecem (máx. 3) |
+
+### 16.2 Cardápio de aberturas (escolha uma diferente dos 3 últimos artigos)
+
+- **A1 Pergunta-dor:** "A PGFN avaliou a capacidade de pagamento da sua empresa e o resultado não bate com a realidade do seu caixa?"
+- **A2 Cena concreta:** "A carta do INSS chegou numa terça-feira, com uma palavra só em destaque: indeferido."
+- **A3 Novidade com data:** "Desde 6 de agosto de 2026, uma norma do próprio INSS diz, com todas as letras, que..."
+- **A4 Frase que ouvimos no escritório:** "'Mas eu já estou curado, ainda tenho direito?' É uma das perguntas que mais ouvimos de quem..."
+  (genérica, sem identificar ninguém).
+- **A5 Mito × realidade:** "Muita gente acredita que a isenção acaba quando o tratamento termina. Não é bem assim."
+- **A6 Número que chama atenção:** "Cinco anos. É o tempo que a lei dá para recuperar o imposto descontado indevidamente, e ele não para de correr."
+
+O **alívio** também varia: "A boa notícia é que...", "Existe saída, e ela está na própria lei.",
+"A resposta curta é: depende, mas em muitos casos, sim.", "A lei não deixa você sem resposta."
+A **persona** pode vir como "Este artigo foi escrito para...", "Se você é <persona>, este texto é para
+você." ou embutida na própria frase.
+
+### 16.3 Formatos de simulação (sempre rotulada como hipotética)
+
+- **S1 Tabela** item / valor, com linha final em negrito.
+- **S2 História de um personagem** (João, Clara, "uma clínica de Juiz de Fora"), narrada em 2 ou 3 parágrafos.
+- **S3 Dois cenários lado a lado** ("sem a isenção" × "com a isenção"; "CAPAG B" × "CAPAG D").
+- **S4 Linha do tempo** (o que acontece no mês 1, no mês 6, no ano 5; ideal para prazos e prescrição).
+- **S5 Conta faixa a faixa** (isenção de IR), em lista, com a alíquota efetiva no fim.
+
+Nunca reaproveite o texto de explicação de uma simulação anterior. Mude os números, o personagem e as frases.
+
+### 16.4 Formatos do Box do Especialista
+
+O H2 sempre começa com "Box do Especialista:", e o complemento muda conforme o tema: "O Detalhe Que
+Muda o Resultado na Perícia", "O Que a Fiscalização Costuma Olhar Primeiro", "Três Cuidados Antes de
+Assinar a Transação". A primeira linha é sempre a assinatura do autor.
+
+- **B1 Três dicas numeradas** (o formato atual).
+- **B2 O erro que mais vemos**, em 2 parágrafos: o erro e como evitá-lo.
+- **B3 Checklist curto** de 4 a 6 documentos ou providências, com uma frase de bastidor.
+- **B4 Bastidor em um parágrafo** (algo que só quem atua vê) e uma dica final.
+
+### 16.5 Chamadas antes do botão (em negrito; alterne)
+
+1. "Fale agora com um especialista e entenda os próximos passos do seu caso, sem compromisso."
+2. "Quer saber se isso se aplica ao seu caso? Converse com a nossa equipe, sem compromisso."
+3. "Se ficou alguma dúvida sobre a sua situação, mande uma mensagem pelo WhatsApp e conte o seu caso."
+4. "O primeiro passo é uma conversa. Fale com a nossa equipe e veja o caminho mais seguro para você."
+5. Família: "Converse com uma especialista em Direito de Família, com discrição, sem compromisso."
+
+### 16.6 Técnicas que deixam o texto com cara de gente
+
+- **Ritmo:** misture frases longas com frases curtas. Uma frase de impacto de vez em quando. Assim.
+  Pelo menos 3 frases de até 8 palavras por artigo.
+- **Uma observação de prática por artigo**, em primeira pessoa do plural e sem identificar clientes:
+  "No escritório, a dúvida que mais aparece é...", "Vemos com frequência laudos que...". Nada de
+  "ganhamos todos os casos": a observação é sobre o problema, não sobre resultados.
+- **Imperfeição controlada:** nem toda lista tem 3 itens, nem toda seção tem 3 parágrafos, nem todo
+  H2 é uma pergunta. Quebre a simetria.
+- **Exemplos do cotidiano** do leitor (o contracheque, a carta do INSS, o e-mail do contador) em vez de
+  abstrações.
+- **Fórmulas da casa com moderação:** no máximo 3 por artigo entre "A boa notícia é que", "Em
+  linguagem clara", "Este artigo foi escrito para", "Na prática", "O prazo corre todos os dias" e "O
+  que só quem vive o dia a dia... sabe". Prefira as que não apareceram nos 2 últimos artigos.
+
+### 16.7 Vícios de texto de IA (evitar)
+
+"É importante destacar", "Vale ressaltar", "Cabe salientar", "Além disso" abrindo parágrafo após
+parágrafo, "Em suma", "Em resumo", "Neste contexto", "No cenário atual", "crucial", "fundamental"
+repetido, "navegar", "jornada", "desvendar", "mergulhar", "robusto", "abrangente", "Não se trata apenas
+de...", "de forma eficaz", "é essencial", "potencializar", "imprescindível". Também evite travessão (—)
+em excesso, trios de adjetivos e frase final de seção que só repete o que acabou de ser dito.
+
+### 16.8 Ficha de variação (a rotina preenche)
+
+Antes de escrever, a rotina lê as fichas dos 3 últimos artigos (`revisoes/*.variacao.json`) e escolhe
+uma combinação **diferente em abertura, simulação e Box**, com chamada diferente da última. Depois grava
+a ficha do artigo novo em `revisoes/<slug>.variacao.json`:
+
+```json
+{
+  "data": "2026-11-13",
+  "frente": "I",
+  "abertura": "A4",
+  "simulacao": "S3",
+  "box": "B2",
+  "chamada": 3,
+  "formulas_da_casa": ["Na prática", "Em linguagem clara"],
+  "titulo_box": "Box do Especialista: O Detalhe Que Muda o Resultado na Perícia",
+  "titulo_conclusao": "Conclusão: Curado Não Quer Dizer Sem Direito"
+}
+```
+
+O revisor automático confere o resultado: vícios de IA (H1), travessões (H2), ritmo (H3), fórmulas
+da casa (H4), subtítulos repetidos dos 8 últimos artigos (H5), abertura repetida (H6) e trechos
+copiados de artigos recentes (H7, no máximo 60 palavras). São avisos, mas **a rotina deve reescrever os
+trechos apontados** antes de entregar.

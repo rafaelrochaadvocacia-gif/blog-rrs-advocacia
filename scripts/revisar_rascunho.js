@@ -30,6 +30,9 @@ async function () {
     frente: "II",
     // Opcional: caminho de página de serviço quando a frente não está no mapa
     paginaServicoExtra: "",
+    // Quantos posts publicados recentes usar na checagem de repetição
+    // (humanização). 0 desliga a checagem.
+    compararRecentes: 8,
     // Toda lei, súmula, tema, portaria, edital, IN, resolução ou processo
     // citado no texto precisa estar aqui, com a URL OFICIAL onde foi conferido.
     fontes: [
@@ -103,6 +106,49 @@ async function () {
     /\bbai (encontrar|ver)\b/i,
     /atendiento/i,
     /\b(de|da|do|das|dos|que|em|para|com|no|na) \1\b/
+  ];
+
+  // Humanização: vícios típicos de texto gerado por IA (sem acentos, minúsculas).
+  const VICIOS_IA = [
+    /e importante (destacar|ressaltar|lembrar|observar|salientar)/g,
+    /vale (ressaltar|destacar|salientar)/g,
+    /cabe (ressaltar|destacar|salientar)/g,
+    /\balem disso\b/g,
+    /\bem suma\b/g,
+    /\bem resumo\b/g,
+    /\bneste contexto\b/g,
+    /\bno cenario atual\b/g,
+    /\bcrucial\b/g,
+    /\bfundamental\b/g,
+    /\bnavegar\b/g,
+    /\bjornada\b/g,
+    /\bdesvend/g,
+    /\bmergulh/g,
+    /\brobust[oa]s?\b/g,
+    /\babrangente/g,
+    /\bnao se trata apenas\b/g,
+    /\bde forma (eficaz|eficiente|assertiva)\b/g,
+    /\be essencial\b/g,
+    /\bpotencializ/g,
+    /\bimprescindivel\b/g
+  ];
+
+  // Fórmulas da casa: boas, mas cansam se aparecem todas juntas e em todo artigo.
+  const MARCAS_DA_CASA = [
+    ["A boa notícia é que", /a boa noticia (e que|:)/],
+    ["Em linguagem clara", /em linguagem clara/],
+    ["Este artigo/guia foi escrito para", /este (artigo|guia) foi escrito para/],
+    ["Na prática", /\bna pratica\b/],
+    ["O prazo corre todos os dias", /o prazo corre todos os dias/],
+    ["O que só quem vive o dia a dia ... sabe", /o que so quem vive o dia a dia/]
+  ];
+
+  // Trechos que PODEM se repetir entre artigos (identidade fixa da casa).
+  const FORMULAS_PERMITIDAS = [
+    "atendimento presencial em juiz de fora e online para todo o brasil",
+    "fale agora com um especialista e entenda os proximos passos do seu caso sem compromisso",
+    "converse com uma especialista em direito de familia e entenda os proximos passos do seu caso sem compromisso",
+    "escritorio rafael rocha e santos advocacia seu direito nossa luta"
   ];
 
   const DOMINIOS_OFICIAIS = [
@@ -358,6 +404,104 @@ async function () {
   }
 
   // ------------------------------------------------------------- busca
+  async function buscarRecentes(idAtual) {
+    const n = CONFIG.compararRecentes || 0;
+    if (!n) return [];
+    const body = {
+      query: {
+        sort: [
+          {
+            fieldName: "firstPublishedDate",
+            order: "DESC"
+          }
+        ],
+        paging: {
+          limit: n + 1
+        }
+      },
+      fieldsets: ["RICH_CONTENT"]
+    };
+    try {
+      const r = await wix.request({
+        method: "POST",
+        url: "https://www.wixapis.com/blog/v3/posts/query",
+        body: body
+      });
+      return ((r.data || r).posts || [])
+        .filter(p => p.id !== idAtual)
+        .slice(0, n)
+        .map(p => ({
+          title: p.title,
+          nodes: (p.richContent && p.richContent.nodes) || []
+        }));
+    } catch (e) {
+      return [];
+    }
+  }
+
+  // ---------------------------------------------------- humanização
+  function textoComparavel(nodes) {
+    // Texto corrido do artigo, sem assinatura, tagline, CTA e fórmulas permitidas.
+    const partes = blocos(nodes)
+      .filter(b => b.type !== "HEADING" && b.text)
+      .filter(b => !(/^Por\s/i.test(b.text) && /OAB/i.test(b.text)))
+      .map(b => b.text);
+    let t = " " + norm(partes.join(" \n ")) + " ";
+    FORMULAS_PERMITIDAS.forEach(f => {
+      t = t.split(" " + f + " ").join(" | ");
+    });
+    return t;
+  }
+
+  function trechosRepetidos(atual, recentes, tamanho) {
+    const k = tamanho || 8;
+    const vistos = new Set();
+    recentes.forEach(txt => {
+      const w = txt.split(" ").filter(Boolean);
+      for (let i = 0; i + k <= w.length; i++) vistos.add(w.slice(i, i + k).join(" "));
+    });
+    const w = atual.split(" ").filter(Boolean);
+    const marcado = new Array(w.length).fill(false);
+    for (let i = 0; i + k <= w.length; i++) {
+      const sh = w.slice(i, i + k).join(" ");
+      if (sh.indexOf("|") < 0 && vistos.has(sh)) {
+        for (let j = i; j < i + k; j++) marcado[j] = true;
+      }
+    }
+    const trechos = [];
+    let ini = -1;
+    for (let i = 0; i <= w.length; i++) {
+      if (i < w.length && marcado[i]) {
+        if (ini < 0) ini = i;
+      } else if (ini >= 0) {
+        trechos.push(w.slice(ini, i).join(" "));
+        ini = -1;
+      }
+    }
+    return {
+      palavras: marcado.filter(Boolean).length,
+      trechos: trechos
+    };
+  }
+
+  function frasesDoCorpo(bl) {
+    const out = [];
+    bl.filter(b => b.type === "PARAGRAPH" && b.text.length > 40)
+      .filter(b => !(/^Por\s/i.test(b.text) && /OAB/i.test(b.text)))
+      .forEach(b => {
+        b.text.split(/(?<=[.!?])\s+/).forEach(f => {
+          const n = contarPalavras(f);
+          if (n >= 3) out.push(n);
+        });
+      });
+    return out;
+  }
+
+  function primeirasPalavras(nodes, n) {
+    const bl = blocos(nodes).filter(b => b.type === "PARAGRAPH" && b.text.length > 60 && !/OAB/.test(b.text.slice(0, 120)));
+    return bl.length ? norm(bl[0].text).split(" ").slice(0, n).join(" ") : "";
+  }
+
   async function buscar() {
     if (CONFIG.origem === "publicado" || CONFIG.modo === "snapshot_publicado") {
       let r;
@@ -401,7 +545,7 @@ async function () {
   }
 
   // ------------------------------------------------------------- revisão
-  function revisar(post) {
+  function revisar(post, recentes) {
     const nodes = (post.richContent && post.richContent.nodes) || [];
     const bl = blocos(nodes);
     const naoVazios = bl.filter(b => b.text || ["TOC", "IMAGE", "BUTTON", "TABLE"].indexOf(b.type) >= 0);
@@ -477,13 +621,13 @@ async function () {
     const box = acharH2(/^box d[oa] especialista/i);
     const faq = acharH2(/perguntas frequentes/i);
     const conclusao = acharH2(/^conclus/i);
-    const porque = acharH2(/^por que (contar|analisar|procurar|ter)/i);
+    const porque = h2.find(b => b !== box && /^por que|quando vale|sozinh|advogad|especialista/i.test(sem_acentos(b.text)) && !/^box d/i.test(sem_acentos(b.text)));
     const simul = acharH2(/simula|exemplo|quanto (voce|sua|pode|vale|custa|da)|o que pode estar em jogo/i);
     check("E4", "BLOQUEIA", !!box, "Seção \"Box do Especialista\"", "");
     check("E5", "BLOQUEIA", !!faq, "Seção \"Perguntas Frequentes\"", "");
     check("E6", "BLOQUEIA", !!conclusao && conclusao === h2[h2.length - 1], "Seção \"Conclusão: ...\" como último H2",
       conclusao ? "A conclusão não é o último H2" : "Sem H2 começando por \"Conclusão\"");
-    check("E7", "AVISO", !!porque, "Seção \"Por Que Contar com um(a) Advogado(a) Especialista...\"", "");
+    check("E7", "AVISO", !!porque, "Seção sobre o papel do advogado (\"Por Que Contar com...\", \"Quando Vale a Pena...\" etc.)", "");
     check("E8", "AVISO", !!simul, "Seção de simulação/exemplo numérico", "");
     if (simul) {
       const txtSimul = secao(simul).map(b => b.text).join(" ");
@@ -594,6 +738,51 @@ async function () {
     check("O3", "BLOQUEIA", erros.length === 0, "Sem erros de digitação conhecidos", "Encontrados: " + erros.join(" | "));
     check("O4", "AVISO", !espacos, "Sem espaços duplos no texto", "");
 
+    // ---------- humanização (avisos: a rotina deve reescrever os trechos apontados)
+    const corpoNorm = norm(textoCorpo);
+    const vicios = [];
+    let totalVicios = 0;
+    VICIOS_IA.forEach(re => {
+      const m = corpoNorm.match(re);
+      if (m) {
+        totalVicios += m.length;
+        vicios.push(m[0] + (m.length > 1 ? " (" + m.length + "x)" : ""));
+      }
+    });
+    check("H1", "AVISO", totalVicios <= 3, "Poucos vícios de texto de IA (no máx. 3 no artigo)",
+      "Encontrados " + totalVicios + ": " + vicios.join(" | ") + ". Reescreva com palavras do dia a dia do escritório.");
+    const travessoes = (textoCorpo.match(/—/g) || []).length;
+    check("H2", "AVISO", travessoes <= 10, "Travessão (—) usado com moderação (até 10)", "Travessões: " + travessoes);
+    const frases = frasesDoCorpo(bl);
+    const media = frases.reduce((a, b) => a + b, 0) / (frases.length || 1);
+    const dp = Math.sqrt(frases.reduce((a, b) => a + (b - media) * (b - media), 0) / (frases.length || 1));
+    const cv = media ? dp / media : 0;
+    const curtas = frases.filter(n => n <= 8).length;
+    check("H3", "AVISO", cv >= 0.45 && curtas >= 3, "Ritmo variado: frases curtas de impacto misturadas com frases longas",
+      "Variação do tamanho das frases: " + cv.toFixed(2) + " (mín. 0,45); frases de até 8 palavras: " + curtas + " (mín. 3)");
+    const marcasUsadas = MARCAS_DA_CASA.filter(m => m[1].test(corpoNorm)).map(m => m[0]);
+    check("H4", "AVISO", marcasUsadas.length <= 3, "No máximo 3 fórmulas da casa no mesmo artigo",
+      "Usadas: " + marcasUsadas.join(" | ") + ". Troque algumas por formulações novas.");
+    let repeticao = null;
+    if (recentes && recentes.length) {
+      const titulosRecentes = new Set();
+      recentes.forEach(r => blocos(r.nodes).filter(b => b.type === "HEADING").forEach(b => titulosRecentes.add(norm(b.text))));
+      const h2Repetidos = h2.concat(h3).map(b => b.text).filter(t => {
+        const n = norm(t);
+        return n !== "perguntas frequentes" && titulosRecentes.has(n);
+      });
+      check("H5", "AVISO", h2Repetidos.length <= 1, "Subtítulos diferentes dos usados nos últimos " + recentes.length + " artigos",
+        "Repetidos: " + h2Repetidos.join(" | "));
+      const abertura = primeirasPalavras(nodes, 5);
+      const aberturasRecentes = recentes.map(r => primeirasPalavras(r.nodes, 5));
+      check("H6", "AVISO", !abertura || aberturasRecentes.indexOf(abertura) < 0, "Abertura diferente das dos últimos artigos",
+        "O 1º parágrafo começa igual a um artigo recente: \"" + abertura + "...\"");
+      repeticao = trechosRepetidos(textoComparavel(nodes), recentes.map(r => textoComparavel(r.nodes)), 8);
+      check("H7", "AVISO", repeticao.palavras <= 60, "Sem frases copiadas de artigos recentes (até 60 palavras em comum)",
+        repeticao.palavras + " palavras em trechos iguais a artigos recentes: " +
+        repeticao.trechos.filter(t => t.split(" ").length >= 10).slice(0, 5).map(t => "\"" + t.slice(0, 140) + "\"").join(" | "));
+    }
+
     // ---------- fontes jurídicas
     const citacoes = extrairCitacoes(textoCompleto);
     const chavesFontes = new Set();
@@ -660,6 +849,10 @@ async function () {
       situacaoNoWix: post.status,
       estatisticas: {
         palavras: palavras,
+        variacaoRitmoFrases: Number(cv.toFixed(2)),
+        viciosIA: totalVicios,
+        formulasDaCasa: marcasUsadas,
+        palavrasRepetidasDeArtigosRecentes: repeticao ? repeticao.palavras : null,
         h2: h2.length,
         perguntasFaq: perguntas.length,
         linksInternos: internos.length,
@@ -708,5 +901,6 @@ async function () {
       erro: "Preencha CONFIG.palavraChave"
     };
   }
-  return revisar(post);
+  const recentes = await buscarRecentes(post.id);
+  return revisar(post, recentes);
 }

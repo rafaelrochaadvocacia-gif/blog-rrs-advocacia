@@ -93,9 +93,21 @@ Detalhes em [`diretrizes/revisao-automatica.md`](diretrizes/revisao-automatica.m
 - **Fase 1 (ativa):** rascunho já revisado automaticamente; o Rafael publica.
 - **Fase 2 (não ativa):** se o revisor aprovar, a rotina agenda a publicação para 48h depois e o Rafael só veta se quiser. Liga quando `python3 scripts/calibracao.py status --csv revisoes/calibracao.csv` disser **PRONTO PARA A FASE 2** e o Rafael autorizar.
 
-Os prompts das rotinas já atualizados para a Fase 1 estão em [`rotinas/`](rotinas/). Como as rotinas rodam no computador RochaeSantos, a troca do prompt precisa ser aprovada pelo Rafael num chat ligado a esse computador, ou feita direto no app Claude para desktop.
+As rotinas rodam no **Claude Code na nuvem**, direto neste repositório (branch `main`):
 
-As rotinas trabalham na pasta `Logo final/capas-blog/` do computador do Rafael. Copie para lá `diretrizes/guia-de-estilo-casa.md`, `diretrizes/revisao-automatica.md`, `scripts/revisar_rascunho.js` e `scripts/calibracao.py`, e crie a subpasta `revisoes/`.
+- `rotinas/pesquisa-monitoramento.md`: pesquisa de segunda que grava pautas em `areas/*/briefing-*.txt`.
+- `rotinas/redator.md`: redator, chamado com a área (`isencao-ir`, `tributario`, `previdenciario`, `familia`).
+- `rotinas/agendamentos.md`: textos e horários das tarefas agendadas e o que fazer antes de ligar.
+
+Para mudar o comportamento das rotinas, edite esses arquivos e as `diretrizes/`. As tarefas agendadas só
+apontam para eles. Capas geradas ficam em `areas/<área>/capas/`, e os pareceres e a calibração, em `revisoes/`.
+
+### Humanização
+
+O guia de estilo separa o que é identidade fixa da casa do que deve variar a cada artigo (abertura,
+formato da simulação e do Box, títulos, chamada). Cada artigo grava uma ficha de variação, e o revisor
+avisa quando há trechos copiados de artigos recentes, subtítulos repetidos, vícios de texto de IA ou
+ritmo monótono. Ver `diretrizes/guia-de-estilo-casa.md`, seção 16.
 
 ## 🐍 Scripts Python
 

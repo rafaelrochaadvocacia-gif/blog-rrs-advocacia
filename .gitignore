@@ -22,12 +22,8 @@ Thumbs.db
 *.cache
 .pytest_cache/
 
-# Capas em rascunho (use "Já usadas" para as publicadas)
-# Nota: as capas individuais NÃO devem estar no git
-# Elas são geradas dinamicamente pelos scripts Python
-areas/*/capas/*.webp
-areas/*/capas/*.png
-areas/*/capas/*.jpg
+# Capas: desde 09/11/2026 as rotinas rodam no Claude Code (nuvem) e as capas
+# ficam versionadas em areas/<area>/capas/ para o Rafael baixar pelo GitHub.
 
 # Arquivos temporários
 *.tmp

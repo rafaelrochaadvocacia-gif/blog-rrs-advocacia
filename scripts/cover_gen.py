@@ -12,9 +12,15 @@ LOGO_CANDIDATES=[
  os.path.join(_HERE, "..", "Logo final RRS fundado azul marinho .png"),
  os.path.join(_HERE, "Logo final RRS fundado azul marinho .png"),
 ]
-SERIF_B="/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf"
-SERIF="/usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf"
-SERIF_I="/usr/share/fonts/truetype/dejavu/DejaVuSerif-Italic.ttf"
+def _fonte(*opcoes):
+    # usa a primeira fonte que existir (DejaVu é o padrão; as outras são reserva)
+    for f in opcoes:
+        if os.path.exists(f): return f
+    return opcoes[0]
+_T="/usr/share/fonts/truetype/"
+SERIF_B=_fonte(_T+"dejavu/DejaVuSerif-Bold.ttf",_T+"liberation/LiberationSerif-Bold.ttf",_T+"freefont/FreeSerifBold.ttf")
+SERIF=_fonte(_T+"dejavu/DejaVuSerif.ttf",_T+"liberation/LiberationSerif-Regular.ttf",_T+"freefont/FreeSerif.ttf")
+SERIF_I=_fonte(_T+"dejavu/DejaVuSerif-Italic.ttf",_T+"liberation/LiberationSerif-Italic.ttf",_T+"freefont/FreeSerifItalic.ttf")
 
 def load_mono():
     for p in LOGO_CANDIDATES:

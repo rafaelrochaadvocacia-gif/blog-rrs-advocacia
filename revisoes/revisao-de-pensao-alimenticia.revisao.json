@@ -1,0 +1,29 @@
+{
+  "status": "APROVADO",
+  "nota": 100,
+  "postId": "270ee646-0e16-4c11-8bc1-e79f85c1c97f",
+  "titulo": "Revisão de Pensão Alimentícia Com Renda Variável: Como o Valor É Definido e Quando Pode Mudar (2026)",
+  "situacaoNoWix": "UNPUBLISHED",
+  "slug": "revisao-de-pensao-alimenticia",
+  "palavraChave": "revisão de pensão alimentícia",
+  "autor": "fernanda",
+  "frente": "VIII",
+  "estatisticas": {
+    "palavras": 2235,
+    "variacaoRitmoFrases": 0.6,
+    "viciosIA": 0,
+    "formulasDaCasa": ["Em linguagem clara", "Na prática"],
+    "palavrasRepetidasDeArtigosRecentes": 27,
+    "h2": 12,
+    "perguntasFaq": 6,
+    "linksInternos": 3,
+    "ocorrenciasPalavraChave": 6,
+    "citacoesJuridicas": 4
+  },
+  "bloqueios": [],
+  "avisos": [],
+  "citacoesDetectadas": ["Lei 5.478/1968", "Súmula 358 do STJ", "Súmula 621 do STJ", "Súmula 309 do STJ"],
+  "verificacoes": 58,
+  "aprovadas": 58,
+  "rodadas": 1
+}

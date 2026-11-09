@@ -1,0 +1,33 @@
+{
+  "status": "APROVADO",
+  "nota": 100,
+  "postId": "01a7e888-f7fe-4971-bc4f-41c796511ea0",
+  "titulo": "ITCD na Partilha de Bens em Minas Gerais: Quando a Divisão Desigual no Divórcio Gera Imposto (2026)",
+  "situacaoNoWix": "UNPUBLISHED",
+  "estatisticas": {
+    "palavras": 2496,
+    "variacaoRitmoFrases": 0.55,
+    "viciosIA": 0,
+    "formulasDaCasa": [
+      "Em linguagem clara",
+      "Na prática"
+    ],
+    "palavrasRepetidasDeArtigosRecentes": 27,
+    "h2": 12,
+    "perguntasFaq": 7,
+    "linksInternos": 4,
+    "ocorrenciasPalavraChave": 5,
+    "citacoesJuridicas": 4
+  },
+  "bloqueios": [],
+  "avisos": [],
+  "citacoesDetectadas": [
+    "Lei 14.941/2003",
+    "Lei Complementar 227/2026",
+    "Decreto 43.981/2005",
+    "Emenda Constitucional 132/2023"
+  ],
+  "verificacoes": 58,
+  "aprovadas": 58,
+  "rodadas": 1
+}

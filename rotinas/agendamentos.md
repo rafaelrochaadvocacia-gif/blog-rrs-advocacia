@@ -6,20 +6,24 @@ uma rotina, edite `rotinas/redator.md`, `rotinas/pesquisa-monitoramento.md` ou a
 
 Cada tarefa abre uma sessão nova no Claude Code, com o conector **Wix**, e trabalha na branch `main`.
 
-**Como criar:** pela tela de rotinas do Claude Code no claude.ai (claude.ai/code → Routines → nova
-rotina). Em cada uma, selecione o repositório `rafaelrochaadvocacia-gif/blog-rrs-advocacia` e o
-conector **Wix**, defina o horário e cole o texto abaixo. Criadas de dentro de uma sessão, as tarefas
-saem **sem o conector do Wix e sem o repositório**, e não funcionam. Uma tentativa assim ficou criada e
-**desligada** ("Blog RRS - Pesquisa e monitoramento (Code)"); pode apagá-la ou reaproveitá-la
-editando o repositório e o conector na mesma tela.
+## Situação em 09/11/2026
 
-| Tarefa | Quando (horário de Brasília) | Situação |
-|---|---|---|
-| Blog RRS - Pesquisa e monitoramento | segunda, 07:52 | ativa |
-| Blog RRS - Tributário | segunda, 18:20 | ativa |
-| Blog RRS - Família | terça, 18:20 | desligada (como no Cowork) |
-| Blog RRS - Previdenciário | quarta, 18:20 | desligada (como no Cowork) |
-| Blog RRS - Isenção de IR | sexta, 18:20 | ativa |
+As rotinas da nuvem reaproveitam tarefas antigas de setembro, que já tinham o repositório e o
+conector **Wix** (as tarefas criadas de dentro de uma sessão saem sem eles). Para editar: abra o link,
+clique em Editar, mude Nome, texto e Acionamento, e salve. Modelo: Sonnet 5.5.
+
+| Tarefa | Quando (Brasília) | Situação | Link |
+|---|---|---|---|
+| Blog RRS - Pesquisa e monitoramento | segunda, 07:52 | ativa | https://claude.ai/code/routines/trig_01K5orZHdhxLkU4YfuZxtj2m |
+| Blog RRS - Tributário | segunda, 18:20 | ativa (testada em 09/11: repositório e Wix ok) | https://claude.ai/code/routines/trig_01NYJQ4gLDuGVgZYYfq446Jc |
+| Blog RRS - Isenção de IR | sexta, 18:20 | ativa (testada em 09/11) | https://claude.ai/code/routines/trig_01VSyJCXvxT4Tojdv3eumccM |
+| Família (a adaptar) | terça, 18:20 | pausada | https://claude.ai/code/routines/trig_01SGdsh8d6hRhvoeZp9pZnjC |
+| Previdenciário (a adaptar) | quarta, 18:20 | pausada | https://claude.ai/code/routines/trig_012LFhm6bbgookBt8cSN3Rip |
+
+Rotinas antigas do Cowork (dependiam do computador): **pausadas** em 09/11/2026 (tributário, isenção de
+IR, pesquisa). Família e previdenciário do Cowork já estavam pausadas. Há ainda cópias duplicadas das
+rotinas de sábado e uma tentativa sem conector ("Blog RRS - Pesquisa e monitoramento (Code)"), todas
+pausadas; podem ser apagadas.
 
 ## Texto da tarefa de pesquisa
 

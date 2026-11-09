@@ -93,6 +93,8 @@ Detalhes em [`diretrizes/revisao-automatica.md`](diretrizes/revisao-automatica.m
 - **Fase 1 (ativa):** rascunho já revisado automaticamente; o Rafael publica.
 - **Fase 2 (não ativa):** se o revisor aprovar, a rotina agenda a publicação para 48h depois e o Rafael só veta se quiser. Liga quando `python3 scripts/calibracao.py status --csv revisoes/calibracao.csv` disser **PRONTO PARA A FASE 2** e o Rafael autorizar.
 
+Os prompts das rotinas já atualizados para a Fase 1 estão em [`rotinas/`](rotinas/). Como as rotinas rodam no computador RochaeSantos, a troca do prompt precisa ser aprovada pelo Rafael num chat ligado a esse computador, ou feita direto no app Claude para desktop.
+
 As rotinas trabalham na pasta `Logo final/capas-blog/` do computador do Rafael. Copie para lá `diretrizes/guia-de-estilo-casa.md`, `diretrizes/revisao-automatica.md`, `scripts/revisar_rascunho.js` e `scripts/calibracao.py`, e crie a subpasta `revisoes/`.
 
 ## 🐍 Scripts Python

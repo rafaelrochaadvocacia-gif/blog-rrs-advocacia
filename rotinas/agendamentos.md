@@ -6,6 +6,13 @@ uma rotina, edite `rotinas/redator.md`, `rotinas/pesquisa-monitoramento.md` ou a
 
 Cada tarefa abre uma sessão nova no Claude Code, com o conector **Wix**, e trabalha na branch `main`.
 
+**Como criar:** pela tela de rotinas do Claude Code no claude.ai (claude.ai/code → Routines → nova
+rotina). Em cada uma, selecione o repositório `rafaelrochaadvocacia-gif/blog-rrs-advocacia` e o
+conector **Wix**, defina o horário e cole o texto abaixo. Criadas de dentro de uma sessão, as tarefas
+saem **sem o conector do Wix e sem o repositório**, e não funcionam. Uma tentativa assim ficou criada e
+**desligada** ("Blog RRS - Pesquisa e monitoramento (Code)"); pode apagá-la ou reaproveitá-la
+editando o repositório e o conector na mesma tela.
+
 | Tarefa | Quando (horário de Brasília) | Situação |
 |---|---|---|
 | Blog RRS - Pesquisa e monitoramento | segunda, 07:52 | ativa |

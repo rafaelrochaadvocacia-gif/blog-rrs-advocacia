@@ -251,7 +251,13 @@ com outros advogados e casos reais identificáveis.
   É diferente do H1, que é mais longo e conversacional.
 - **Meta description** (130 a 156 caracteres): começa com a palavra-chave e dois-pontos, cita o
   benefício concreto e fecha com "Juiz de Fora e todo o Brasil" ou "Fale com um especialista".
-- **Slug** sem acentos, só com a palavra-chave: `isencao-de-imposto-de-renda-para-tuberculose-ativa`.
+- **Slug** = a palavra-chave exata **com acentos**, em minúsculas e com hífens:
+  `isenção-de-imposto-de-renda-para-tuberculose-ativa`. É o formato que o Assistente de SEO do Wix
+  exige (sem acentos, ele acusa "Adicione a palavra-chave de foco ao slug do URL"). Os posts publicados
+  já usam slug acentuado.
+- **Imagem dentro do artigo:** a capa entra também como imagem entre o título e a assinatura, com o
+  texto alternativo igual à palavra-chave. Sem ela, o Assistente de SEO acusa "Adicione uma imagem ou
+  vídeo" (prioridade alta). A "imagem de capa" do post, sozinha, só aparece no feed.
 - **JSON-LD Article** com o autor certo (só 1 dos 30 publicados estava sem). O Wix gera sozinho os
   esquemas HowTo e FAQPage.
 

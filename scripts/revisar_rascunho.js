@@ -832,9 +832,13 @@ async function () {
       "Dado estruturado (JSON-LD) Article com o autor correto", article ? "Autor no JSON-LD: " + JSON.stringify(article.author) : "Sem JSON-LD Article");
     check("S5", "BLOQUEIA", !(robots && /noindex/i.test(robots.props.content || "")), "Indexação permitida (sem noindex)", "");
     check("S6", "AVISO", og.length === 3, "Open Graph (og:title, og:description, og:type)", "Presentes: " + og.join(", "));
-    const slugN = norm((post.slug || "").replace(/-/g, " "));
-    const kwTokens = norm(kw).split(" ").filter(t => t.length > 3);
-    check("S7", "AVISO", kwTokens.every(t => slugN.indexOf(t) >= 0), "Slug contém as palavras principais da palavra-chave", "Slug: " + post.slug);
+    const slugEsperado = kw.trim().toLowerCase().replace(/\s+/g, "-");
+    let slugAtual = post.slug || "";
+    try {
+      slugAtual = decodeURIComponent(slugAtual);
+    } catch (e) {}
+    check("S7", "AVISO", slugAtual.toLowerCase() === slugEsperado, "Slug = palavra-chave com acentos e hífens (formato do Assistente de SEO do Wix)",
+      "Slug atual: " + slugAtual + " | esperado: " + slugEsperado);
     check("S8", "AVISO", post.excerpt && post.excerpt.length <= 160, "Resumo (excerpt) preenchido com até 160 caracteres",
       "Resumo (" + (post.excerpt || "").length + ")");
 

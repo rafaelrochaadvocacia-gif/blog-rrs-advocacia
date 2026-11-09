@@ -108,7 +108,12 @@ resolução ou número de processo que for citar, guarde a URL **oficial** onde 
 stj.jus.br, stf.jus.br, gov.br, in.gov.br, cnj.jus.br, carf.economia.gov.br). **Se não confirmar em
 fonte oficial, não cite.** Salve em `revisoes/<slug>.fontes.json`:
 `[{"citacao": "Lei 7.713/1988", "url": "https://www.planalto.gov.br/ccivil_03/leis/l7713.htm"}]`.
-O `<slug>` é o slug que você vai usar no post: sem acentos, só a palavra-chave com hífens.
+**Dois nomes, não confunda:**
+- **seoSlug** (o endereço do post no Wix) = a palavra-chave exata, **com acentos**, em minúsculas e com
+  hífens no lugar dos espaços. Ex.: `isenção-de-imposto-de-renda-para-tuberculose-ativa`. É o formato
+  que o Assistente de SEO do Wix exige.
+- **`<slug>`** (nome dos arquivos no repositório e da capa) = o mesmo seoSlug **sem acentos**.
+  Ex.: `isencao-de-imposto-de-renda-para-tuberculose-ativa`.
 
 Liste os posts publicados e os rascunhos do blog e **não repita** tema ou ângulo já tratado.
 
@@ -179,7 +184,7 @@ novos para o Box e a Conclusão. Grave em `revisoes/<slug>.variacao.json` (forma
 ### P6. SEO
 
 A palavra-chave exata entra na title tag (até 60 caracteres), no H1, em um H2, no 1º parágrafo e ao
-longo do texto, na meta description (até 156 caracteres) e no slug (sem acentos). Defina
+longo do texto, na meta description (até 156 caracteres) e no seoSlug (com acentos, ver P2). Defina
 `seoData.settings.keywords = [{term, isMain: true}]`, as tags og:title, og:description e og:type=article,
 e um JSON-LD de Article (headline, description, keywords, author = autor da área, publisher = Rafael
 Rocha e Santos Advocacia, inLanguage pt-BR) como tag `script` com `props.type = "application/ld+json"`.
@@ -191,7 +196,7 @@ Indexação permitida. Excerpt = meta description.
    com title = H1, excerpt, memberId e richContent. Depois faça PATCH do seoData e do seoSlug.
    **Não publique.**
 2. **Gerar a capa:** `python3 scripts/cover_gen.py "<H1>" "areas/<ÁREA>/capas/capa-<slug>.webp"`
-   (o `<slug>` é exatamente o seoSlug). Sem o arquivo da logo (`Logo final RRS fundado azul marinho .png`)
+   (o `<slug>` é o seoSlug sem acentos). Sem o arquivo da logo (`Logo final RRS fundado azul marinho .png`)
    na raiz do repositório, a capa sai sem o monograma: avise no relatório.
 3. **Enviar a capa ao Wix** (método testado em 09/11/2026; **nunca** use UploadImageToWixSite passando
    o caminho do arquivo, porque o Wix não lê o caminho e a imagem chega corrompida):
@@ -204,10 +209,21 @@ Indexação permitida. Excerpt = meta description.
 4. **Definir como imagem de capa do post** (aparece no feed do blog): PATCH
    `https://www.wixapis.com/blog/v3/draft-posts/{id}`, sem `action`, com
    `{"draftPost": {"id": "<id>", "memberId": "<memberId>", "media": {"wixMedia": {"image": {"id": "<file.id>"}}, "displayed": true, "custom": true}}}`.
-5. **Imagem no topo do texto:** insira um nó IMAGE como 1º nó do richContent (antes da assinatura),
-   com `imageData.image.src.id = <file.id>`, `width 1080`, `height 1350`, `altText` = palavra-chave e
-   `containerData` centralizado. Confira o formato do nó IMAGE no recipe "Author Ricos Rich Content"
-   da documentação do Wix e envie o richContent completo num PATCH sem `action`.
+5. **Imagem dentro do artigo, entre o título e a assinatura** (sem ela o Assistente de SEO acusa
+   "Adicione uma imagem ou vídeo"; a capa do post sozinha não aparece no corpo): leia o rascunho
+   (`GET .../draft-posts/{id}?fieldsets=RICH_CONTENT`), remova os parágrafos vazios do início e envie,
+   num PATCH sem `action`, o richContent completo começando por estes dois nós, seguidos da assinatura
+   e do resto do texto (formato confirmado no recipe "Author Ricos Rich Content" e testado em 09/11/2026):
+
+   ```json
+   { "type": "IMAGE", "nodes": [], "imageData": {
+       "containerData": { "width": { "size": "CONTENT" }, "alignment": "CENTER", "textWrap": true },
+       "image": { "src": { "id": "<file.id>" }, "width": 1080, "height": 1350 },
+       "altText": "<palavra-chave>" } },
+   { "type": "PARAGRAPH", "nodes": [], "paragraphData": {} }
+   ```
+
+   Exatamente **uma** linha em branco entre a imagem e a assinatura.
 
 ### P8. Revisão automática e snapshot
 

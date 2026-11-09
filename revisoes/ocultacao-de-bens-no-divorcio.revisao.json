@@ -1,0 +1,46 @@
+{
+  "status": "APROVADO",
+  "nota": 100,
+  "postId": "639a7073-4e52-4f91-a754-90f152b2c0ba",
+  "titulo": "Ocultação de Bens no Divórcio: Sinais de Alerta e Medidas Legais Para Proteger a Sua Meação (2026)",
+  "situacaoNoWix": "UNPUBLISHED",
+  "autor": "fernanda",
+  "frente": "VIII",
+  "palavraChave": "ocultação de bens no divórcio",
+  "slug": "ocultacao-de-bens-no-divorcio",
+  "seoSlug": "ocultação-de-bens-no-divórcio",
+  "estatisticas": {
+    "palavras": 2205,
+    "variacaoRitmoFrases": 0.53,
+    "viciosIA": 0,
+    "formulasDaCasa": [
+      "A boa notícia é que",
+      "Em linguagem clara",
+      "Este artigo/guia foi escrito para"
+    ],
+    "palavrasRepetidasDeArtigosRecentes": 19,
+    "h2": 11,
+    "perguntasFaq": 6,
+    "linksInternos": 3,
+    "ocorrenciasPalavraChave": 5,
+    "citacoesJuridicas": 1
+  },
+  "bloqueios": [],
+  "avisos": [],
+  "citacoesDetectadas": [
+    "REsp 1.236.916"
+  ],
+  "verificacoes": 58,
+  "aprovadas": 58,
+  "rodadasDeCorrecao": 0,
+  "fontes": [
+    {
+      "citacao": "REsp 1.236.916/RS",
+      "url": "https://www.stj.jus.br/websecstj/cgi/revista/REJ.cgi/ATC?seq=31575812&tipo=51&nreg=201100311609&dt=20131028&formato=PDF&salvar=false"
+    }
+  ],
+  "capa": {
+    "fileId": "7e94f7_ad0aec52963443508fef6d2ba190f970~mv2.webp",
+    "hash": "acfe3b45efc92f68b17d72e0374d6c9c"
+  }
+}

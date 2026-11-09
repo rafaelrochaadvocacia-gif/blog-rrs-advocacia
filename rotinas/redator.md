@@ -84,6 +84,10 @@ https://www.rochaesantosadvocacia.com.br/practice-areas e use `paginaServicoExtr
 4. Leia os **3 arquivos `revisoes/*.diff.md` mais recentes**: mostram o que o Rafael corrigiu antes de
    publicar. Não repita esses pontos.
 5. Leia as **3 fichas `revisoes/*.variacao.json` mais recentes** (de qualquer área).
+6. **Checagem do Wix (sempre, mesmo sem pauta):** consulte 1 post publicado
+   (`POST https://www.wixapis.com/blog/v3/posts/query` com `paging.limit = 1`, ordenado por
+   `firstPublishedDate` DESC) e anote o título. Se falhar, informe no relatório "⚠️ conector Wix
+   indisponível" com o erro e não siga para a criação do artigo.
 
 ### P1. Pauta
 
@@ -244,4 +248,5 @@ Se o push falhar por rede, tente de novo até 4 vezes (esperando 2, 4, 8 e 16 se
 - **Humanização:** palavras em comum com artigos recentes (H7) e variação do ritmo (H3).
 - **Capas e calibração:** capas arquivadas e ambíguas; artigos comparados nesta rodada e a linha de
   status do `calibracao.py`.
+- **Wix:** título do post lido na checagem do P0 (ou o erro).
 - Erros, se houver.

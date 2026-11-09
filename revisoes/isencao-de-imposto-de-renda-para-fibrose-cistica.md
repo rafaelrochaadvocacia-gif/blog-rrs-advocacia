@@ -1,4 +1,4 @@
-Por Rafael Rocha, Advogado especialista em isenção de Imposto de Renda – OAB/MG 193.958.
+Por Dr. Rafael Rocha, Advogado especialista em isenção de Imposto de Renda – OAB/MG 193.958.
 
 "Doutor, eu tenho fibrose cística desde criança. Isso conta agora que me aposentei?" A pergunta aparece com frequência no escritório, e quase sempre vem junto de outra: por que o Imposto de Renda continua sendo descontado todo mês, se a doença está na lei? A resposta curta é que a isenção de imposto de renda para fibrose cística existe, alcança aposentadoria, reforma e pensão e pode permitir a devolução do que foi retido nos últimos cinco anos.
 
@@ -70,7 +70,7 @@ O pedido administrativo, feito na fonte pagadora ou na Receita Federal, continua
 
 ## Box do Especialista: o Detalhe Que Mais Atrasa Esses Processos
 
-_Por Rafael Rocha, OAB/MG 193.958, Juiz de Fora e todo o Brasil._
+_Por Dr. Rafael Rocha, OAB/MG 193.958, Juiz de Fora e todo o Brasil._
 
 O erro que mais vejo é deixar a documentação do diagnóstico para depois. Na fibrose cística, o diagnóstico muitas vezes foi feito na infância, em outro hospital ou até em outra cidade. Quando a pessoa se aposenta e decide pedir a isenção, os exames antigos estão espalhados ou perdidos, e o processo fica parado esperando papel.
 

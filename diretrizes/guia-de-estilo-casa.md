@@ -49,10 +49,10 @@ Frequência de marcas da casa nos 15 mais recentes:
 
 | Área / frente | Assina | Assinatura no topo (1ª linha do corpo, em itálico) |
 |---|---|---|
-| I - Isenção de IR por doença grave | **Rafael Rocha** | `Por Rafael Rocha, Advogado especialista em isenção de Imposto de Renda – OAB/MG 193.958.` |
-| II, III, VI, VII - Tributário | **Rafael Rocha** | `Por Rafael Rocha, Advogado Tributarista – OAB/MG 193.958.` |
-| IV, V - Previdenciário (BPC, auxílios, aposentadoria) | **Fernanda** | `Por Fernanda A. Santos Rocha, Advogada Previdenciarista – OAB/MG 199.347.` |
-| VIII - Divórcio e família | **Fernanda** | `Por Fernanda A. Santos Rocha, Advogada de Direito de Família – OAB/MG 199.347.` |
+| I - Isenção de IR por doença grave | **Rafael Rocha** | `Por Dr. Rafael Rocha, Advogado especialista em isenção de Imposto de Renda – OAB/MG 193.958.` |
+| II, III, VI, VII - Tributário | **Rafael Rocha** | `Por Dr. Rafael Rocha, Advogado Tributarista – OAB/MG 193.958.` |
+| IV, V - Previdenciário (BPC, auxílios, aposentadoria) | **Fernanda** | `Por Dra. Fernanda A. Santos Rocha, Advogada Previdenciarista – OAB/MG 199.347.` |
+| VIII - Divórcio e família | **Fernanda** | `Por Dra. Fernanda A. Santos Rocha, Advogada de Direito de Família – OAB/MG 199.347.` |
 
 Divergências com a skill `artigos-juridicos-seo` (vale a tabela acima):
 
@@ -61,13 +61,17 @@ Divergências com a skill `artigos-juridicos-seo` (vale a tabela acima):
 - A skill põe família na conta do Rafael. **Na prática, todos os 4 de família são da Fernanda**,
   e a página de serviço de divórcio é dela.
 - Nos artigos publicados, o nome da Fernanda aparece de três jeitos ("Fernanda Santos",
-  "Fernanda A. Santos Rocha" e com ou sem "Rocha"). **Padronize em "Fernanda A. Santos Rocha"**.
+  "Fernanda A. Santos Rocha" e com ou sem "Rocha"). **Padronize em "Dra. Fernanda A. Santos Rocha"**.
+- **Regra do Rafael (09/11/2026):** toda menção aos advogados leva o título: "Dr. Rafael Rocha" e
+  "Dra. Fernanda A. Santos Rocha", na assinatura do topo, na primeira linha do Box do Especialista e
+  em qualquer outro ponto do texto. O nome do escritório ("Rafael Rocha e Santos Advocacia") não leva
+  título. O revisor automático bloqueia (A2) menção sem Dr./Dra.
 
 ## 3. Esqueleto (a ordem é fixa; os títulos abaixo são só exemplos, redija os seus)
 
 ```
 [Imagem de capa no topo do corpo — alt text = palavra-chave]
-_Por <autor>, <qualificação> – OAB/MG <número>._           ← assinatura, em itálico
+_Por Dr./Dra. <autor>, <qualificação> – OAB/MG <número>._          ← assinatura, em itálico
 Parágrafo 1: pergunta-dor + "A boa notícia é que..." com a palavra-chave exata
 Parágrafo 2: "Este artigo foi escrito para <persona>..." + o que o texto cobre
 [Sumário nativo do Wix — nó TOC — SEM nenhum título antes dele]

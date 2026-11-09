@@ -33,6 +33,10 @@ async function () {
     // Quantos posts publicados recentes usar na checagem de repetição
     // (humanização). 0 desliga a checagem.
     compararRecentes: 8,
+    // Modo lote (opcional): revisa vários rascunhos de uma vez. Cada item tem
+    // postId, palavraChave, autor, frente e, se quiser, fontes e paginaServicoExtra.
+    // Quando preenchido, os campos individuais acima são ignorados.
+    lote: [],
     // Toda lei, súmula, tema, portaria, edital, IN, resolução ou processo
     // citado no texto precisa estar aqui, com a URL OFICIAL onde foi conferido.
     fontes: [
@@ -73,7 +77,7 @@ async function () {
   // da skill artigos-juridicos-seo. Qualquer ocorrência REPROVA o artigo.
   const LISTA_NEGRA = [
     /garantimos/i,
-    /garantia de (êxito|exito|sucesso|resultado|vitória|vitoria)/i,
+    /(?<!(não há|nao ha|sem|nenhuma|não existe|nao existe|não oferece|não damos) )garantia de (êxito|exito|sucesso|resultado|vitória|vitoria)/i,
     /resultado garantido/i,
     /sucesso garantido/i,
     /100\s?% de chance/i,
@@ -105,7 +109,7 @@ async function () {
     /vocÇe/,
     /\bbai (encontrar|ver)\b/i,
     /atendiento/i,
-    /\b(de|da|do|das|dos|que|em|para|com|no|na) \1\b/
+    /(?<![\p{L}\p{N}])(de|da|do|das|dos|que|em|para|com|no|na) \1(?![\p{L}\p{N}])/u
   ];
 
   // Humanização: vícios típicos de texto gerado por IA (sem acentos, minúsculas).
@@ -872,6 +876,46 @@ async function () {
   }
 
   // ------------------------------------------------------------- main
+  if (CONFIG.modo === "revisar" && CONFIG.lote && CONFIG.lote.length) {
+    const resultados = [];
+    let recentesLote = null;
+    for (const item of CONFIG.lote) {
+      CONFIG.postId = item.postId;
+      CONFIG.palavraChave = item.palavraChave;
+      CONFIG.autor = item.autor;
+      CONFIG.frente = item.frente;
+      CONFIG.fontes = item.fontes || [];
+      CONFIG.paginaServicoExtra = item.paginaServicoExtra || "";
+      try {
+        const p = await buscar();
+        if (!p) {
+          resultados.push({
+            postId: item.postId,
+            erro: "não encontrado"
+          });
+          continue;
+        }
+        if (!recentesLote) recentesLote = await buscarRecentes(null);
+        const r = revisar(p, recentesLote);
+        resultados.push({
+          postId: r.postId,
+          titulo: r.titulo,
+          status: r.status,
+          nota: r.nota,
+          estatisticas: r.estatisticas,
+          bloqueios: r.bloqueios,
+          avisos: r.avisos,
+          citacoesDetectadas: r.citacoesDetectadas
+        });
+      } catch (e) {
+        resultados.push({
+          postId: item.postId,
+          erro: String(e && e.message || e)
+        });
+      }
+    }
+    return resultados;
+  }
   if (!CONFIG.postId || /COLE_AQUI/.test(CONFIG.postId)) {
     return {
       erro: "Preencha CONFIG.postId"

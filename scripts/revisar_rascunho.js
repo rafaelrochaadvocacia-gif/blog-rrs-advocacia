@@ -53,11 +53,11 @@ async function () {
 
   const AUTORES = {
     rafael: {
-      nome: "Rafael Rocha",
+      nome: "Dr. Rafael Rocha",
       oab: "193.958"
     },
     fernanda: {
-      nome: "Fernanda",
+      nome: "Dra. Fernanda",
       oab: "199.347"
     }
   };
@@ -592,6 +592,16 @@ async function () {
     check("A1", "BLOQUEIA", byline && byline.text.indexOf(autor.nome) >= 0 && byline.text.indexOf(autor.oab) >= 0,
       "Assinatura no topo com nome e OAB do autor da área",
       byline ? "Assinatura encontrada: \"" + byline.text + "\" (esperado " + autor.nome + " – OAB/MG " + autor.oab + ")" : "Nenhuma linha \"Por ..., OAB/MG ...\" nos primeiros blocos");
+    // Toda menção aos advogados leva "Dr." / "Dra." (o nome do escritório fica de fora).
+    const semTitulo = [];
+    naoVazios.forEach(b => {
+      const t = b.text || "";
+      const r1 = t.match(/(?<!Dr\.\s)Rafael Rocha(?! e Santos)/g) || [];
+      const r2 = t.match(/(?<!Dra\.\s)Fernanda(?= A\.| Santos| Rocha|[\s,.;:]|$)/g) || [];
+      if (r1.length || r2.length) semTitulo.push(t.slice(0, 90));
+    });
+    check("A2", "BLOQUEIA", semTitulo.length === 0, "Rafael Rocha sempre como \"Dr. Rafael Rocha\" e Fernanda sempre como \"Dra. Fernanda\"",
+      semTitulo.length ? "Sem Dr./Dra. em: " + semTitulo.map(t => "\"" + t + "\"").join(" | ") : "");
 
     // ---------- palavra-chave
     const primeiroParagrafo = (byline ? naoVazios.slice(iByline + 1) : naoVazios).find(b => b.type === "PARAGRAPH" && b.text.length > 60);

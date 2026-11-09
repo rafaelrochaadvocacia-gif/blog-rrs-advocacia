@@ -20,10 +20,14 @@ Site Wix: "RRS Advocacia", siteId `333aa652-3f67-4300-9a63-f40b6407ce15`, member
 
 | ÁREA | Arquivo de pautas | Assinatura (1ª linha do corpo, em itálico) | Público |
 |---|---|---|---|
-| `isencao-ir` | `areas/isencao-ir/briefing-isencao-ir.txt` | Por Rafael Rocha, Advogado especialista em isenção de Imposto de Renda – OAB/MG 193.958. | aposentados, pensionistas, militares reformados e pessoas com doença grave que ainda pagam IR; tom empático e acolhedor |
-| `tributario` | `areas/tributario/briefing-tributario.txt` | Por Rafael Rocha, Advogado Tributarista – OAB/MG 193.958. | empresários; pessoas físicas (profissionais da saúde) nas pautas de equiparação hospitalar |
-| `previdenciario` | `areas/previdenciario/briefing-previdenciario.txt` | Por Fernanda A. Santos Rocha, Advogada Previdenciarista – OAB/MG 199.347. | segurados do INSS, aposentados e pessoas com deficiência; tom empático |
-| `familia` | `areas/familia/briefing-familia.txt` | Por Fernanda A. Santos Rocha, Advogada de Direito de Família – OAB/MG 199.347. | quem tem patrimônio a proteger no divórcio; tom sóbrio, acolhedor e técnico |
+| `isencao-ir` | `areas/isencao-ir/briefing-isencao-ir.txt` | Por Dr. Rafael Rocha, Advogado especialista em isenção de Imposto de Renda – OAB/MG 193.958. | aposentados, pensionistas, militares reformados e pessoas com doença grave que ainda pagam IR; tom empático e acolhedor |
+| `tributario` | `areas/tributario/briefing-tributario.txt` | Por Dr. Rafael Rocha, Advogado Tributarista – OAB/MG 193.958. | empresários; pessoas físicas (profissionais da saúde) nas pautas de equiparação hospitalar |
+| `previdenciario` | `areas/previdenciario/briefing-previdenciario.txt` | Por Dra. Fernanda A. Santos Rocha, Advogada Previdenciarista – OAB/MG 199.347. | segurados do INSS, aposentados e pessoas com deficiência; tom empático |
+| `familia` | `areas/familia/briefing-familia.txt` | Por Dra. Fernanda A. Santos Rocha, Advogada de Direito de Família – OAB/MG 199.347. | quem tem patrimônio a proteger no divórcio; tom sóbrio, acolhedor e técnico |
+
+**Tratamento:** sempre que o texto citar os advogados (assinatura, Box do Especialista, corpo ou FAQ),
+escreva "Dr. Rafael Rocha" e "Dra. Fernanda A. Santos Rocha". O nome do escritório ("Rafael Rocha e
+Santos Advocacia") não leva Dr. O revisor bloqueia (A2) qualquer menção sem o título.
 
 Para o revisor automático, use `autor: "rafael"` nas áreas `isencao-ir` e `tributario` e
 `autor: "fernanda"` nas áreas `previdenciario` e `familia`.

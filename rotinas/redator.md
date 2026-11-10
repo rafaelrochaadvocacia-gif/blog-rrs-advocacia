@@ -112,6 +112,20 @@ resolução ou número de processo que for citar, guarde a URL **oficial** onde 
 stj.jus.br, stf.jus.br, gov.br, in.gov.br, cnj.jus.br, carf.economia.gov.br). **Se não confirmar em
 fonte oficial, não cite.** Salve em `revisoes/<slug>.fontes.json`:
 `[{"citacao": "Lei 7.713/1988", "url": "https://www.planalto.gov.br/ccivil_03/leis/l7713.htm"}]`.
+
+**Como buscar jurisprudência (regra do Rafael, 10/11/2026):**
+- **STJ e STF:** busque pela classe e pelo número **sem pontos e sem a UF**, por exemplo
+  `REsp 2266738`, `AREsp 1234567`, `RE 567985`, `ARE 1309642`. Nunca `REsp 2.266.738/SP`. Depois
+  localize, entre os resultados, o julgado correto, conferindo turma, relator e data. Citar no texto
+  pode seguir o formato usual (`REsp 2.266.738/SP`); o padrão sem pontos vale só para a busca.
+- **Onde ler:** a pesquisa de jurisprudência do STJ (scon.stj.jus.br) e as notícias oficiais
+  (www.stj.jus.br) e, no STF, portal.stf.jus.br. Se a busca for bloqueada para acesso automatizado,
+  registre isso no relatório e trate o julgado como **não confirmado**: não cite o número nem a tese.
+- **Leis:** o Planalto recusa conexões da nuvem. Leia o texto oficial no normas.leg.br (Senado; a
+  página é dinâmica, abra com o Chromium do Playwright) ou no www2.camara.leg.br (texto atualizado
+  da Câmara, que também traz os decretos). Leis de Minas Gerais: www.almg.gov.br e
+  www.fazenda.mg.gov.br.
+
 **Dois nomes, não confunda:**
 - **seoSlug** (o endereço do post no Wix) = a palavra-chave exata, **com acentos**, em minúsculas e com
   hífens no lugar dos espaços. Ex.: `isenção-de-imposto-de-renda-para-tuberculose-ativa`. É o formato

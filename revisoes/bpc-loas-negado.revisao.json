@@ -1,0 +1,19 @@
+{
+  "postId": "7b3800fb-54d7-4e61-b272-c0fecaac9185",
+  "slug": "bpc-loas-negado",
+  "palavraChave": "BPC LOAS negado",
+  "autor": "fernanda",
+  "frente": "IV",
+  "status": "APROVADO",
+  "nota": 100,
+  "titulo": "BPC LOAS Negado Depois da Perícia: Os Três Caminhos Para Contestar a Negativa do INSS (2026)",
+  "situacaoNoWix": "UNPUBLISHED",
+  "estatisticas": {"palavras": 2632, "variacaoRitmoFrases": 0.52, "viciosIA": 0, "formulasDaCasa": ["Em linguagem clara", "Na prática"], "palavrasRepetidasDeArtigosRecentes": 34, "h2": 13, "perguntasFaq": 6, "linksInternos": 4, "ocorrenciasPalavraChave": 4, "citacoesJuridicas": 9},
+  "bloqueios": [],
+  "avisos": [],
+  "citacoesDetectadas": ["Lei nº 8.742/1993","Lei nº 13.146/2015","Lei nº 10.259/2001","Súmula 48 da TNU","Súmula 80 da TNU","Tema 27","Tema Repetitivo 185","Tema 350","Decreto nº 6.214/2007"],
+  "verificacoes": 58,
+  "aprovadas": 58,
+  "rodadas_de_correcao": 1,
+  "observacao": "Rodada 0 (script local, mock): aviso E8 (H2 da simulação sem a palavra 'simulação'); H2 renomeado no Wix; rodada oficial no ExecuteWixAPI: APROVADO 58/58."
+}

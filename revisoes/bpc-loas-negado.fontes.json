@@ -1,0 +1,11 @@
+[
+  {"citacao": "Lei 8.742/1993", "url": "https://www.planalto.gov.br/ccivil_03/leis/l8742compilado.htm"},
+  {"citacao": "Lei 13.146/2015", "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13146.htm"},
+  {"citacao": "Lei 10.259/2001", "url": "https://www.planalto.gov.br/ccivil_03/leis/leis_2001/l10259.htm"},
+  {"citacao": "Decreto 6.214/2007", "url": "https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2007/decreto/d6214.htm"},
+  {"citacao": "Súmula 48/TNU", "url": "https://www.cjf.jus.br/phpdoc/virtus/listaSumulas.php"},
+  {"citacao": "Súmula 80/TNU", "url": "https://www.cjf.jus.br/phpdoc/virtus/sumula.php?nsul=80"},
+  {"citacao": "Tema 27 do STF (RE 567.985)", "url": "https://portal.stf.jus.br/jurisprudenciaRepercussao/verAndamentoProcesso.asp?incidente=2569060&numeroProcesso=567985&classeProcesso=RE&numeroTema=27"},
+  {"citacao": "Tema Repetitivo 185/STJ (REsp 1.112.557/MG)", "url": "https://processo.stj.jus.br/repetitivos/temas_repetitivos/pesquisa.jsp?novaConsulta=true&tipo_pesquisa=T&cod_tema_inicial=185&cod_tema_final=185"},
+  {"citacao": "Tema 350 do STF (RE 631.240)", "url": "https://portal.stf.jus.br/jurisprudenciaRepercussao/verPronunciamento.asp?pronunciamento=11648473"}
+]

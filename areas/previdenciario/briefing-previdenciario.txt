@@ -1,7 +1,0 @@
-FRENTE: IV - BPC/LOAS
-TEMA: BPC/LOAS Negado Depois da Perícia ou da Avaliação Social: O Que Fazer e Como Recorrer
-PALAVRA-CHAVE: BPC LOAS negado
-BASE JURÍDICA: Lei 8.742/1993 (LOAS), art. 20, §§ 2º, 3º, 6º e 11 (conceito de deficiência, renda e avaliação da miserabilidade por outros meios); Lei 13.146/2015, art. 2º, § 1º (avaliação biopsicossocial); Decreto 6.214/2007 (regulamento do BPC); recurso ao Conselho de Recursos da Previdência Social (CRPS) no prazo de 30 dias da ciência do indeferimento (Decreto 3.048/1999 - confirmar artigo vigente); Tema Repetitivo 185/STJ (REsp 1.112.557/MG - a renda per capita não é o único meio de provar a miserabilidade) e STF, Tema 27 (RE 567.985). Enfoque: diferenciar negativa por renda x negativa por deficiência/avaliação social, e os três caminhos (recurso, novo pedido, ação na Justiça Federal). Linkar ao artigo de renda per capita (rascunho de 01/10) e ao de BPC bloqueado.
-GATILHO: B - lacuna competitiva: concorrentes (Barbieri, Sousa Advogados, nossodireito.com) ranqueiam com "BPC negado: o que fazer/como recorrer"; o blog do RRS não tem post sobre negativa e recurso do BPC.
-DATA DA SUGESTÃO: 2026-10-05
----

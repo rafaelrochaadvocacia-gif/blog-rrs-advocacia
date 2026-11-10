@@ -1,0 +1,31 @@
+{
+ "status": "APROVADO",
+ "nota": 100,
+ "postId": "0faf0c97-f863-40f7-ad5e-ffe95f4e8d08",
+ "titulo": "Ex-Cônjuge Precisa Pagar Aluguel Se Mora com os Filhos no Imóvel do Outro ou do Casal? O Que o STJ Decidiu (2026)",
+ "situacaoNoWix": "UNPUBLISHED",
+ "estatisticas": {
+  "palavras": 2317,
+  "variacaoRitmoFrases": 0.57,
+  "viciosIA": 0,
+  "formulasDaCasa": [
+   "Em linguagem clara",
+   "Na prática"
+  ],
+  "palavrasRepetidasDeArtigosRecentes": 43,
+  "h2": 12,
+  "perguntasFaq": 6,
+  "linksInternos": 3,
+  "ocorrenciasPalavraChave": 5,
+  "citacoesJuridicas": 2
+ },
+ "bloqueios": [],
+ "avisos": [],
+ "citacoesDetectadas": [
+  "REsp 2.082.584",
+  "REsp 1.699.013"
+ ],
+ "verificacoes": 58,
+ "aprovadas": 58,
+ "observacao": "Reescrito em 10/11/2026 a pedido do Rafael: novo título (opção A), palavra-chave e os dois cenários (imóvel só do outro e imóvel do casal). Revisor rodado localmente com o mesmo script; comparação de humanização feita com posts publicados até 09/11."
+}

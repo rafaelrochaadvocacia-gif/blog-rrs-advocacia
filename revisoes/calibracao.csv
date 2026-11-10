@@ -1,0 +1,9 @@
+data,slug,semelhanca_pct,paragrafos_rascunho,paragrafos_alterados,paragrafos_removidos,paragrafos_novos,titulo_mudou,subtitulos_mudaram,status_revisor
+2026-11-10,auxilio-acidente-e-aposentadoria,95.1,83,4,0,0,nao,nao,APROVADO
+2026-11-10,bpc-loas-negado,100.0,87,0,0,0,nao,nao,APROVADO
+2026-11-10,dissolucao-de-uniao-estavel-partilha-de-bens,100.0,72,0,0,0,nao,nao,APROVADO
+2026-11-10,ex-conjuge-precisa-pagar-aluguel,100.0,71,0,0,0,nao,nao,APROVADO
+2026-11-10,itcd-na-partilha-de-bens,100.0,95,0,0,0,nao,nao,APROVADO
+2026-11-10,ocultacao-de-bens-no-divorcio,100.0,85,0,0,0,nao,nao,APROVADO
+2026-11-10,pacto-antenupcial,100.0,96,0,0,0,nao,nao,APROVADO
+2026-11-10,revisao-de-pensao-alimenticia,100.0,92,0,0,0,nao,nao,APROVADO

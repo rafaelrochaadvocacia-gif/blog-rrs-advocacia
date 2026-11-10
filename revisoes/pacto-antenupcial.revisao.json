@@ -1,0 +1,25 @@
+{
+  "status": "APROVADO",
+  "nota": 100,
+  "postId": "17d4317a-fedb-4a33-9a11-2526a211e539",
+  "titulo": "Pacto Antenupcial e Separação Total de Bens: O Que Realmente Fica Protegido no Divórcio e na Herança (2026)",
+  "situacaoNoWix": "UNPUBLISHED",
+  "estatisticas": {
+    "palavras": 2586,
+    "variacaoRitmoFrases": 0.62,
+    "viciosIA": 0,
+    "formulasDaCasa": ["Em linguagem clara", "Na prática"],
+    "palavrasRepetidasDeArtigosRecentes": 36,
+    "h2": 13,
+    "perguntasFaq": 7,
+    "linksInternos": 5,
+    "ocorrenciasPalavraChave": 15,
+    "citacoesJuridicas": 5
+  },
+  "bloqueios": [],
+  "avisos": [],
+  "citacoesDetectadas": ["Súmula 377 do STF", "Súmula 377", "Tema 1.236", "REsp 1.472.945", "ARE 1.309.642"],
+  "verificacoes": 58,
+  "aprovadas": 58,
+  "rodadas": 1
+}

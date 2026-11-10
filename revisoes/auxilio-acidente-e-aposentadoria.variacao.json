@@ -1,0 +1,16 @@
+{
+  "data": "2026-11-09",
+  "frente": "V",
+  "abertura": "A1",
+  "simulacao": "S4",
+  "box": "B2",
+  "chamada": 2,
+  "formulas_da_casa": [
+    "A boa notícia é que",
+    "Este artigo foi escrito para",
+    "Na prática"
+  ],
+  "titulo_box": "Box do Especialista: O Erro Que Mais Vemos Antes de Pedir a Aposentadoria",
+  "titulo_conclusao": "Conclusão: Duas Datas Respondem Mais do Que Parece",
+  "observacao": "Combinação A1/S4/B2 imposta pela sessão principal em 09/11/2026 (8 redatores em paralelo); chamada 2 escolhida por não haver ficha anterior."
+}

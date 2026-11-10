@@ -1,10 +1,3 @@
-FRENTE: V - Auxílio-acidente (INSS)
-TEMA: Recebo Auxílio-Acidente e Vou Me Aposentar: Vou Perder o Benefício? Entenda Quando É Possível Receber os Dois
-PALAVRA-CHAVE: auxílio-acidente e aposentadoria
-BASE JURÍDICA: Lei 8.213/1991, art. 86, §§ 1º a 3º (redação da Lei 9.528/1997 - cessação do auxílio-acidente com a aposentadoria) e art. 31 (o valor do auxílio-acidente integra o salário de contribuição para o cálculo da aposentadoria); Súmula 507/STJ e Tema Repetitivo 555/STJ (acumulação só quando a lesão e o início da aposentadoria são anteriores a 11/11/1997); STJ, 2ª Turma, REsp 2.266.738/SP (julgado em 09/09/2026, publicado em 14/09/2026 - o INSS pode discutir a acumulação na fase de execução quando a questão não foi decidida antes). Enfoque informativo: conferir as datas da lesão e da aposentadoria, verificar se o auxílio-acidente foi somado no cálculo da aposentadoria e o que fazer se o INSS questionar o pagamento conjunto. Não prometer manutenção do benefício.
-GATILHO: A - novidade jurídica: decisão do STJ publicada em 14/09/2026 e noticiada em 30/09/2026; o blog não tem post sobre acumulação de auxílio-acidente com aposentadoria.
-DATA DA SUGESTÃO: 2026-10-05
----
 FRENTE: IV - BPC/LOAS
 TEMA: BPC/LOAS Negado Depois da Perícia ou da Avaliação Social: O Que Fazer e Como Recorrer
 PALAVRA-CHAVE: BPC LOAS negado

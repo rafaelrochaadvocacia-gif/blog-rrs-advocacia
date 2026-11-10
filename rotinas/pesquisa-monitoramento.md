@@ -69,6 +69,12 @@ Para cada frente, busque na web novidades dos últimos 7 a 14 dias. Aceite achad
 forem relevantes e ainda não explorados. Fontes: decisões do STJ e do STF (temas repetitivos,
 súmulas), editais da PGFN e da Receita Federal, valores do INSS e do BPC, outras normas e julgados.
 
+**Busca de jurisprudência no STJ e no STF:** pesquise pela classe e pelo número sem pontos e sem a
+UF (ex.: `REsp 2266738`, `RE 567985`) e depois localize o julgado correto (turma, relator, data).
+Só grave uma pauta baseada em julgado se o julgado foi **encontrado em fonte oficial** (scon.stj.jus.br,
+www.stj.jus.br, portal.stf.jus.br). Notícia de site jurídico não basta: se não achar a fonte oficial,
+diga isso no campo BASE JURÍDICA ("julgado não confirmado em fonte oficial").
+
 - **Frentes VI e VII:** pesquise também o CARF (acórdãos, Câmara Superior, divergências com a Receita),
   as soluções de consulta da Receita/COSIT e a jurisprudência do STJ e do STF (por exemplo, os Temas
   Repetitivos 217 e 1427).

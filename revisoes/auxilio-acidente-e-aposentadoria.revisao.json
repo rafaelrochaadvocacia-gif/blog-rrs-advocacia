@@ -1,0 +1,37 @@
+{
+  "status": "APROVADO",
+  "nota": 100,
+  "postId": "fbe20874-d42e-438b-aa83-4bb9076b143b",
+  "titulo": "Auxílio-Acidente e Aposentadoria: Dá Para Receber os Dois? O Que Vale Desde 1997 e o Que o STJ Decidiu em 2026",
+  "situacaoNoWix": "UNPUBLISHED",
+  "estatisticas": {
+    "palavras": 2457,
+    "variacaoRitmoFrases": 0.52,
+    "viciosIA": 0,
+    "formulasDaCasa": [
+      "A boa notícia é que",
+      "Este artigo/guia foi escrito para",
+      "Na prática"
+    ],
+    "palavrasRepetidasDeArtigosRecentes": 43,
+    "h2": 12,
+    "perguntasFaq": 7,
+    "linksInternos": 4,
+    "ocorrenciasPalavraChave": 5,
+    "citacoesJuridicas": 6
+  },
+  "bloqueios": [],
+  "avisos": [],
+  "citacoesDetectadas": [
+    "Lei 8.213/1991",
+    "Lei 9.528/1997",
+    "Súmula 507",
+    "Súmula 507 do STJ",
+    "Tema 555",
+    "REsp 1.296.673"
+  ],
+  "verificacoes": 58,
+  "aprovadas": 58,
+  "recentesComparados": 8,
+  "rodadasDeCorrecao": 0
+}

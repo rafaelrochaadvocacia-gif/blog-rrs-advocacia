@@ -96,7 +96,10 @@ https://www.rochaesantosadvocacia.com.br/practice-areas e use `paginaServicoExtr
 ### P1. Pauta
 
 Abra o arquivo de pautas da ÁREA. Os blocos são separados por linhas `---`, com os campos
-FRENTE, TEMA, PALAVRA-CHAVE, BASE JURÍDICA, GATILHO e DATA DA SUGESTÃO.
+FRENTE, TEMA, PALAVRA-CHAVE, DECISÃO DO LEITOR, BASE JURÍDICA, GATILHO e DATA DA SUGESTÃO
+(DECISÃO DO LEITOR pode faltar em pautas antigas: nesse caso, defina você mesmo antes de escrever).
+**DECISÃO DO LEITOR** é o que o leitor quer decidir ao terminar o artigo (ex.: "vale a pena entrar
+na Justiça para recuperar os 5 anos?"). O texto inteiro é escrito para ajudá-lo nessa decisão.
 
 - **Há bloco:** use o **primeiro** (o mais antigo). TEMA é a base do título; PALAVRA-CHAVE é a frase
   exata de SEO; BASE JURÍDICA é o ponto de partida da pesquisa (confirme tudo na web, nunca cite só o
@@ -152,6 +155,12 @@ novos para o Box e a Conclusão. Grave em `revisoes/<slug>.variacao.json` (forma
    observação de prática em primeira pessoa do plural, exemplos do cotidiano, sem os vícios da seção
    16.7. **Não copie frases de artigos anteriores**: o revisor compara com os 8 últimos publicados.
    Nada de título manual antes do Sumário ("O que você vai ver nesse artigo").
+   **Escreva para quem contrata, não para quem executa** (guia, seção 17): o leitor é o aposentado,
+   o pensionista, o empresário ou o familiar que vive o problema, nunca outro advogado. Mostre o que
+   acontece com ele e o que o escritório faz por ele; não ensine a técnica do serviço (peças,
+   estratégia processual, competência, cálculos de liquidação). Termo técnico só quando o leitor vai
+   encontrá-lo em um documento, e traduzido na mesma frase. O revisor avisa (H8) quando o jargão
+   processual se acumula.
 3. **OAB:** informativo, sem promessa de resultado, sem sensacionalismo, sem honorários, sem
    comparação com colegas, sem casos identificáveis. Urgência só quando houver prazo legal real.
 4. Salve o texto em `revisoes/<slug>.md`.

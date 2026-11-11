@@ -127,7 +127,8 @@ Formato do bloco:
 ```
 FRENTE: [numeral romano e nome exato]
 TEMA: [título sugerido, 100% voltado ao cliente leigo]
-PALAVRA-CHAVE: [palavra-chave principal de SEO]
+PALAVRA-CHAVE: [palavra-chave principal de SEO, em frase natural]
+DECISÃO DO LEITOR: [o que o leitor leigo quer decidir ao terminar o artigo]
 BASE JURÍDICA: [fonte/base jurídica que sustenta o texto]
 GATILHO: [A - novidade jurídica | B - lacuna competitiva] + 1 linha explicando
 DATA DA SUGESTÃO: [AAAA-MM-DD de hoje]

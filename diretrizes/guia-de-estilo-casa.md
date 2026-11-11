@@ -404,3 +404,39 @@ O revisor automático confere o resultado: vícios de IA (H1), travessões (H2),
 da casa (H4), subtítulos repetidos dos 8 últimos artigos (H5), abertura repetida (H6) e trechos
 copiados de artigos recentes (H7, no máximo 60 palavras). São avisos, mas **a rotina deve reescrever os
 trechos apontados** antes de entregar.
+
+## 17. Escrever para quem contrata, não para quem executa (regra do Rafael, 11/11/2026)
+
+O leitor é **o cliente**: o aposentado, o pensionista, o empresário ou o familiar que vive o
+problema e está decidindo se procura ajuda. Nunca outro advogado querendo aprender a fazer o serviço.
+
+**Teste do leitor:** cada seção precisa ajudar o leitor a entender a situação dele e a decidir o que
+fazer. Se a seção só ensina a executar o serviço, ela sai ou vira uma frase.
+
+**Mostre o que acontece com o cliente, não como se faz o serviço:**
+
+| Em vez de (texto para advogado) | Escreva (texto para cliente) |
+|---|---|
+| Requisitos da tutela de urgência | Dá para parar o desconto antes de o processo terminar? |
+| Competência: Justiça Federal ou Estadual | Servidor estadual? O caminho é um pouco diferente, e explicamos qual é o seu |
+| Ação declaratória com repetição de indébito | Na Justiça, pedimos duas coisas: parar o desconto e devolver o que foi cobrado |
+| Cálculo da liquidação pela Selic | Quanto você pode receber de volta e como esse valor é corrigido |
+| Prova pericial e Súmula 598 | O laudo do seu médico pode bastar? O que levar na primeira conversa |
+
+**Regras:**
+- Termo técnico só quando o leitor vai encontrá-lo (no laudo, na carta do INSS, numa súmula usada
+  como prova), sempre traduzido na mesma frase.
+- Nada de ensinar a peça: sem modelo de petição, sem estratégia processual, sem "o advogado deve…".
+  Mostre o que o escritório faz pelo cliente e o que o cliente precisa trazer.
+- FAQ com perguntas que o cliente faz: "Quanto tempo demora?", "Preciso fazer perícia?", "Preciso
+  ir ao fórum?", "Continuo recebendo normalmente durante o processo?", "O que levo na primeira
+  conversa?". Valor de honorários e forma de pagamento ficam fora (Provimento 205 da OAB).
+- Toda pauta traz o campo **DECISÃO DO LEITOR** (o que ele quer decidir ao terminar o artigo). O
+  texto é escrito para ajudá-lo nessa decisão, e a chamada final conversa com ela.
+- **Palavra-chave em frase natural:** se o termo do Google Ads for truncado ("advogado restituição
+  imposto de renda"), use a forma natural ("advogado para restituição de imposto de renda"). O Google
+  trata as duas como a mesma busca, e o título fica legível.
+
+O revisor automático avisa (H8) quando o texto acumula 3 ou mais termos de processo sem tradução
+(polo passivo, petição inicial, repetição de indébito, liquidação, competência, litisconsórcio,
+tutela de urgência, latim processual etc.).

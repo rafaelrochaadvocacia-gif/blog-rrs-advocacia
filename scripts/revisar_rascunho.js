@@ -796,6 +796,28 @@ async function () {
         repeticao.palavras + " palavras em trechos iguais a artigos recentes: " +
         repeticao.trechos.filter(t => t.split(" ").length >= 10).slice(0, 5).map(t => "\"" + t.slice(0, 140) + "\"").join(" | "));
     }
+    // H8: o texto é para quem contrata, não para quem executa o serviço (guia, seção 17).
+    // Termos de processo que o cliente leigo não usa. Aviso a partir de 3 termos diferentes.
+    const JARGAO = [
+      ["polo passivo", /\bpolo (passivo|ativo)\b/g],
+      ["petição inicial", /\bpeticao inicial\b|\bexordial\b/g],
+      ["repetição de indébito", /\brepeticao de indebito\b/g],
+      ["liquidação de sentença", /\bliquidacao (de|da) sentenca\b/g],
+      ["cumprimento de sentença", /\bcumprimento de sentenca\b/g],
+      ["litisconsórcio", /\blitisconsorcio\b/g],
+      ["competência (do juízo)", /\bcompetencia (absoluta|relativa|da justica|do juizo|federal|estadual)\b/g],
+      ["ação declaratória", /\bacao declaratoria\b/g],
+      ["tutela de urgência/antecipada", /\btutela (de urgencia|antecipada|provisoria)\b/g],
+      ["latim processual", /\b(fumus boni iuris|periculum in mora|inaudita altera pars|ex officio|in limine)\b/g],
+      ["agravo/embargos", /\b(agravo de instrumento|embargos de declaracao|embargos a execucao)\b/g],
+      ["sucumbência", /\bsucumbencia\b/g],
+      ["preclusão", /\bpreclusao\b/g],
+      ["autos/lide", /\b(nos autos|dos autos|a lide|da lide)\b/g],
+      ["rito processual", /\brito (sumario|ordinario|comum|especial)\b/g]
+    ];
+    const jargao = JARGAO.filter(j => (corpoNorm.match(j[1]) || []).length > 0).map(j => j[0]);
+    check("H8", "AVISO", jargao.length < 3, "Texto para o cliente leigo, sem jargão processual acumulado (guia, seção 17)",
+      "Termos de processo encontrados: " + jargao.join(" | ") + ". Troque pela experiência do cliente (ex.: \"dá para parar o desconto antes do fim do processo?\") ou explique na mesma frase.");
 
     // ---------- fontes jurídicas
     const citacoes = extrairCitacoes(textoCompleto);

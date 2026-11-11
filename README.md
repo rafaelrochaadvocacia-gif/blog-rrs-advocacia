@@ -90,8 +90,8 @@ DATA DA SUGESTÃO: 2026-09-04
 
 Detalhes em [`diretrizes/revisao-automatica.md`](diretrizes/revisao-automatica.md).
 
-- **Fase 1 (ativa):** rascunho já revisado automaticamente; o Rafael publica.
-- **Fase 2 (não ativa):** se o revisor aprovar, a rotina agenda a publicação para 48h depois e o Rafael só veta se quiser. Liga quando `python3 scripts/calibracao.py status --csv revisoes/calibracao.csv` disser **PRONTO PARA A FASE 2** e o Rafael autorizar.
+- **Fase 1 (09/11 a 11/11/2026):** rascunho já revisado automaticamente; o Rafael publica.
+- **Fase 2 (ATIVA desde 11/11/2026):** se o revisor aprovar e todas as citações estiverem conferidas, a rotina agenda a publicação para a primeira 9h a pelo menos 48h depois (fim de semana vai para segunda). O Rafael só veta se quiser, em Blog → Agendados no Wix. Se a calibração cair abaixo de 95%, a rotina volta sozinha à Fase 1.
 
 As rotinas rodam no **Claude Code na nuvem**, direto neste repositório (branch `main`):
 

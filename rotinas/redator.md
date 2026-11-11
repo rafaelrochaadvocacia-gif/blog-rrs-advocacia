@@ -11,8 +11,10 @@ pautas, pareceres, capas e calibração passam de uma execução para a outra.
 Site Wix: "RRS Advocacia", siteId `333aa652-3f67-4300-9a63-f40b6407ce15`, memberId do autor dos posts
 `7e94f763-40c3-4547-b890-4b950ca66dac`.
 
-**Fase atual: FASE 1.** Nunca publique nem agende publicação. Só o Rafael ativa a Fase 2
-(ver `diretrizes/revisao-automatica.md`).
+**Fase atual: FASE 2 (ativada pelo Rafael em 11/11/2026).** Se o artigo passar em todas as
+condições do passo **P8-A**, agende a publicação com a janela de veto de 48 horas. Se faltar qualquer
+condição, deixe como rascunho (comportamento da Fase 1) e explique no relatório. **Nunca publique na
+hora** (`UPDATE_PUBLISH` ou `/publish`): na Fase 2 o caminho é só o agendamento.
 
 ---
 
@@ -265,6 +267,34 @@ Indexação permitida. Excerpt = meta description.
 4. Grave o JSON final em `revisoes/<slug>.revisao.json`.
 5. Rode de novo com `modo "snapshot_rascunho"` e grave o `markdown` em `revisoes/<slug>.rascunho.md`.
 
+### P8-A. Agendamento com janela de veto (Fase 2)
+
+**Condições (todas obrigatórias):**
+1. O revisor terminou **APROVADO**, ou **APROVADO_COM_AVISOS** sem nenhum aviso H1 a H8 pendente.
+2. A capa está definida no post (sem aviso F4 nem F5).
+3. **Toda** citação do texto (lei, súmula, tema, julgado, edital, portaria) foi conferida em fonte
+   oficial e está em `revisoes/<slug>.fontes.json`. Se algum julgado ficou "não confirmado" (por
+   exemplo, a busca no STJ foi bloqueada) ou só foi visto em notícia de site não oficial, **não agende**.
+4. A calibração não pediu volta à Fase 1: antes de agendar, rode
+   `python3 scripts/calibracao.py status --csv revisoes/calibracao.csv`. Se a semelhança média dos
+   últimos 6 estiver abaixo de 95%, não agende (o P10 depois atualiza a planilha com os novos dados).
+
+**Data:** a primeira 9h (horário de Brasília) que esteja a **pelo menos 48 horas** da execução. Se cair
+em sábado ou domingo, use a segunda-feira às 9h. Exemplo: rotina na sexta às 18h20 → segunda às 9h.
+Em UTC, 9h de Brasília é `12:00:00Z`.
+
+**Como agendar** (formato confirmado no schema do Wix em 11/11/2026):
+`PATCH https://www.wixapis.com/blog/v3/draft-posts/{id}` com
+`{"draftPost": {"id": "<id>", "memberId": "<memberId>"}, "action": "UPDATE_SCHEDULE", "scheduledPublishDate": "<AAAA-MM-DDT12:00:00Z>"}`.
+Depois, leia o rascunho de novo (`GET .../draft-posts/{id}`) e confirme que o status mudou para
+agendado e que a data gravada é a pedida. Se o agendamento falhar, deixe como rascunho e relate o erro.
+
+**Se alguma condição faltar:** não agende. No relatório, escreva no topo
+"⚠️ FICOU COMO RASCUNHO, NÃO AGENDADO" e diga qual condição faltou e o que o Rafael precisa conferir.
+
+**Veto:** o Rafael cancela pelo painel do Wix (Blog → Agendados) ou pedindo numa sessão do Claude
+(`"action": "UPDATE_CANCEL_SCHEDULE"`).
+
 ### P9. Capa (conferência)
 
 A capa já foi gerada, enviada e definida no P7. Confirme que os avisos F4 (imagem no topo) e F5
@@ -282,6 +312,9 @@ A capa já foi gerada, enviada e definida no P7. Confirme que os avisos F4 (imag
    grave `revisoes/<slug>.publicado.md` e rode
    `python3 scripts/calibracao.py comparar --rascunho revisoes/<slug>.rascunho.md --publicado revisoes/<slug>.publicado.md --slug <slug> --csv revisoes/calibracao.csv --status-revisor <status>`.
    No fim, rode `python3 scripts/calibracao.py status --csv revisoes/calibracao.csv`.
+   **Volta automática à Fase 1:** se a semelhança média dos últimos 6 artigos ficar abaixo de 95%, não
+   agende nada nesta execução (deixe como rascunho) e escreva no topo do relatório "⚠️ CALIBRAÇÃO ABAIXO
+   DE 95%: rotina voltou à Fase 1 até o Rafael reavaliar".
 
 ### P11. Salvar no repositório
 
@@ -299,6 +332,8 @@ Se o push falhar por rede, tente de novo até 4 vezes (esperando 2, 4, 8 e 16 se
 
 ### P12. Relatório (resposta final, curta)
 
+- **Primeira linha (Fase 2):** "📅 AGENDADO para <dia da semana, DD/MM, 9h> — para vetar, cancele em
+  Blog → Agendados no Wix" **ou** "⚠️ FICOU COMO RASCUNHO, NÃO AGENDADO: <motivo>".
 - **Artigo:** pauta (FRENTE e gatilho A ou B), título, palavra-chave, id do rascunho e ficha de
   variação escolhida.
 - **Capa:** se foi enviada ao Wix e definida como imagem de capa (com o `file.id`). Se não foi, o

@@ -4,7 +4,7 @@ Como as rotinas do blog revisam o próprio rascunho antes de entregar, e como o 
 publicação automática. As rotinas rodam no **Claude Code na nuvem**, direto neste repositório
 (instruções completas em `rotinas/redator.md`).
 
-| | Fase 1 (ATIVA desde 09/11/2026) | Fase 2 (ainda não ativa) |
+| | Fase 1 (09/11 a 11/11/2026) | Fase 2 (ATIVA desde 11/11/2026) |
 |---|---|---|
 | O que a rotina faz | Cria o rascunho, roda o revisor automático, corrige o que ele apontar e deixa o rascunho pronto | O mesmo e, se o revisor aprovar, **agenda a publicação** para 48h depois |
 | O que o Rafael faz | Abre o rascunho, ajusta o que quiser e publica | Só olha se quiser. Para vetar, cancela o agendamento |
@@ -119,7 +119,13 @@ de artigos recentes (H7), artigos calibrados nesta rodada e a linha de status da
 Na calibração com os 30 últimos artigos publicados, o H7 encontrou artigos com até **895 palavras**
 copiadas de artigos anteriores (Espondiloartrose) e 504 (Hepatopatia).
 
-## Fase 2 — publicação agendada com janela de veto (ainda NÃO ativa)
+## Fase 2 — publicação agendada com janela de veto (ATIVA desde 11/11/2026)
+
+Ligada pelo Rafael em 11/11/2026, depois de `calibracao.py status` responder "PRONTO PARA A FASE 2"
+(8 de 8 artigos com 95% ou mais de texto igual). O passo a passo que a rotina segue está em
+`rotinas/redator.md`, passo **P8-A**: só agenda se o revisor aprovar sem avisos pendentes, a capa
+estiver definida e **todas** as citações estiverem conferidas em fonte oficial; a publicação fica para
+a primeira 9h a pelo menos 48 horas da execução (fim de semana passa para segunda).
 
 Só ligar quando as duas condições forem verdadeiras:
 

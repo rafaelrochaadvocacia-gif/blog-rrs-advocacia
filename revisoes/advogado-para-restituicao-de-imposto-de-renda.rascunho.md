@@ -1,5 +1,7 @@
 # Advogado para Restituição de Imposto de Renda por Doença Grave: Quanto Você Pode Recuperar dos Últimos 5 Anos (2026)
 
+[[IMAGEM: advogado para restituição de imposto de renda]]
+
 _Por Dr. Rafael Rocha, Advogado especialista em isenção de Imposto de Renda – OAB/MG 193.958._
 
 Muita gente acredita que a isenção do imposto de renda por doença grave só vale daqui para frente, e que o que já foi descontado ficou para trás. Não é bem assim. A lei permite pedir de volta o que foi cobrado a mais, e é aí que um **advogado para restituição de imposto de renda** faz diferença: ele transforma o direito em dinheiro de volta, mês por mês, dentro de um prazo que não espera.

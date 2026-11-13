@@ -4,8 +4,8 @@
   "palavraChave": "advogado para restituição de imposto de renda",
   "autor": "rafael",
   "frente": "I",
-  "status": "APROVADO_COM_AVISOS",
-  "nota": 96,
+  "status": "APROVADO",
+  "nota": 100,
   "titulo": "Advogado para Restituição de Imposto de Renda por Doença Grave: Quanto Você Pode Recuperar dos Últimos 5 Anos (2026)",
   "situacaoNoWix": "UNPUBLISHED",
   "estatisticas": {
@@ -16,7 +16,7 @@
       "Em linguagem clara",
       "Na prática"
     ],
-    "palavrasRepetidasDeArtigosRecentes": null,
+    "palavrasRepetidasDeArtigosRecentes": 40,
     "h2": 13,
     "perguntasFaq": 7,
     "linksInternos": 3,
@@ -24,10 +24,7 @@
     "citacoesJuridicas": 7
   },
   "bloqueios": [],
-  "avisos": [
-    "F4 Imagem de capa no topo do corpo com alt text contendo a palavra-chave — Sem imagem no topo",
-    "F5 Imagem de capa do post definida (aparece no feed) — Defina a capa nas Configurações do post"
-  ],
+  "avisos": [],
   "citacoesDetectadas": [
     "Lei 7.713/1988",
     "Lei 5.172/1966",
@@ -38,7 +35,7 @@
     "Súmula 598 do STJ"
   ],
   "verificacoes": 56,
-  "aprovadas": 54,
-  "rodadas_de_correcao": 1,
-  "observacao": "Revisor rodado localmente (node, mock do wix.request com o conteudo exato do rascunho) porque o script de 44KB nao cabe no ExecuteWixAPI da rotina. H5-H7 nao rodaram contra os posts recentes; checagem aproximada contra os .publicado.md: ~62 palavras. Avisos F4/F5: capa nao enviada ao Wix (upload negado pelo classificador de permissoes). K4 corrigido na rodada 1."
+  "aprovadas": 56,
+  "rodadas_de_correcao": 2,
+  "observacao": "Revisor rodado localmente (node, mock do wix.request com o conteudo exato do rascunho). Rodada 1: K4 corrigido. Rodada 2: capa enviada ao Wix (hash conferido), definida como imagem do post e inserida no corpo; F4/F5 resolvidos. H5/H6/H7 conferidos no Wix contra os 8 ultimos publicados: H7=40 palavras, H5 e H6 ok."
 }

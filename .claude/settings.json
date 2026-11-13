@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -sS -X PUT -H \"Content-Type: image/webp\" --data-binary @areas/*/capas/capa-*.webp https://upload.wixmp.com/*)"
+    ]
+  }
+}

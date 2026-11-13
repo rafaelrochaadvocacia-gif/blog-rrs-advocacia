@@ -1,0 +1,44 @@
+{
+  "postId": "692972a8-9821-47d7-9dcb-94d6634583a8",
+  "slug": "advogado-para-restituicao-de-imposto-de-renda",
+  "palavraChave": "advogado para restituição de imposto de renda",
+  "autor": "rafael",
+  "frente": "I",
+  "status": "APROVADO_COM_AVISOS",
+  "nota": 96,
+  "titulo": "Advogado para Restituição de Imposto de Renda por Doença Grave: Quanto Você Pode Recuperar dos Últimos 5 Anos (2026)",
+  "situacaoNoWix": "UNPUBLISHED",
+  "estatisticas": {
+    "palavras": 2292,
+    "variacaoRitmoFrases": 0.61,
+    "viciosIA": 0,
+    "formulasDaCasa": [
+      "Em linguagem clara",
+      "Na prática"
+    ],
+    "palavrasRepetidasDeArtigosRecentes": null,
+    "h2": 13,
+    "perguntasFaq": 7,
+    "linksInternos": 3,
+    "ocorrenciasPalavraChave": 5,
+    "citacoesJuridicas": 7
+  },
+  "bloqueios": [],
+  "avisos": [
+    "F4 Imagem de capa no topo do corpo com alt text contendo a palavra-chave — Sem imagem no topo",
+    "F5 Imagem de capa do post definida (aparece no feed) — Defina a capa nas Configurações do post"
+  ],
+  "citacoesDetectadas": [
+    "Lei 7.713/1988",
+    "Lei 5.172/1966",
+    "Lei 15.270/2025",
+    "Lei 9.250/1995",
+    "Lei 15.191/2025",
+    "Súmula 627 do STJ",
+    "Súmula 598 do STJ"
+  ],
+  "verificacoes": 56,
+  "aprovadas": 54,
+  "rodadas_de_correcao": 1,
+  "observacao": "Revisor rodado localmente (node, mock do wix.request com o conteudo exato do rascunho) porque o script de 44KB nao cabe no ExecuteWixAPI da rotina. H5-H7 nao rodaram contra os posts recentes; checagem aproximada contra os .publicado.md: ~62 palavras. Avisos F4/F5: capa nao enviada ao Wix (upload negado pelo classificador de permissoes). K4 corrigido na rodada 1."
+}

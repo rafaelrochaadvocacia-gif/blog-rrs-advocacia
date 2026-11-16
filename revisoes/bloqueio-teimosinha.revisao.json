@@ -1,0 +1,43 @@
+{
+  "postId": "9ffa6c8a-7d78-4728-be36-8a73471bb09a",
+  "slug": "bloqueio-teimosinha",
+  "palavraChave": "bloqueio teimosinha",
+  "autor": "rafael",
+  "frente": "III",
+  "status": "APROVADO_COM_AVISOS",
+  "nota": 95,
+  "titulo": "Bloqueio Teimosinha: A Justiça Está Bloqueando Sua Conta Todo Dia? Como Pedir a Liberação do Dinheiro (2026)",
+  "situacaoNoWix": "UNPUBLISHED",
+  "estatisticas": {
+    "palavras": 2341,
+    "variacaoRitmoFrases": 0.5,
+    "viciosIA": 1,
+    "formulasDaCasa": [
+      "Em linguagem clara",
+      "Na prática",
+      "O prazo corre todos os dias"
+    ],
+    "palavrasRepetidasDeArtigosRecentes": 46,
+    "h2": 11,
+    "perguntasFaq": 6,
+    "linksInternos": 4,
+    "ocorrenciasPalavraChave": 5,
+    "citacoesJuridicas": 4
+  },
+  "bloqueios": [],
+  "avisos": [
+    "E8 Seção de simulação/exemplo numérico (falso aviso: a regex do revisor não tem a flag i e não reconhece H2 em Title Case; o H2 \"Quanto Tempo Dura o Problema? Uma Simulação Hipotética em Linha do Tempo\" existe)",
+    "F4 Imagem de capa no topo do corpo — sem imagem no topo (upload da capa ao Wix negado pelo classificador de permissões)",
+    "F5 Imagem de capa do post não definida (mesmo motivo)"
+  ],
+  "citacoesDetectadas": [
+    "Lei 6.830/1980",
+    "Tema 1.325",
+    "Tema 1.235",
+    "REsp 2.147.428"
+  ],
+  "verificacoes": 58,
+  "aprovadas": 55,
+  "rodadas_de_correcao": 1,
+  "observacao": "Rodada 1 do revisor no Wix. Depois dela, só o H2 da simulação foi renomeado (E8) e o snapshot foi gerado com as mesmas funções de markdown do revisor; o revisor completo não foi rodado de novo. Não agendado: capa não enviada ao Wix."
+}

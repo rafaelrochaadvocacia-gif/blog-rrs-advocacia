@@ -1,8 +1,11 @@
 [
-  {"citacao": "ADI 5422 (STF, sessão virtual encerrada em 3/6/2022)", "url": "https://portal.stf.jus.br/noticias/verNoticiaDetalhe.asp?idConteudo=488372&ori=1"},
-  {"citacao": "ADI 5422, embargos de declaração rejeitados (STF, notícia de 3/10/2022)", "url": "https://portal.stf.jus.br/noticias/verNoticiaDetalhe.asp?idConteudo=495166"},
-  {"citacao": "Lei 7.713/1988, art. 3º, § 1º (citada na notícia do STF)", "url": "https://portal.stf.jus.br/noticias/verNoticiaDetalhe.asp?idConteudo=488372&ori=1"},
-  {"citacao": "Lei 9.250/1995, arts. 4º, II, e 8º, II, f (só resumo da Câmara lido; texto não conferido)", "url": "https://www2.camara.leg.br/legin/fed/lei/1995/lei-9250-26-dezembro-1995-362566-norma-pl.html"},
-  {"citacao": "CTN, art. 168 (prazo de 5 anos; só resumo de busca, texto não conferido)", "url": "https://www2.camara.leg.br/legin/fed/lei/1960-1969/lei-5172-25-outubro-1966-358971-normaatualizada-pl.html"},
-  {"citacao": "Orientação da Receita Federal sobre declaração e retificação (gov.br inacessível nesta sessão; NÃO conferida)", "url": "https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/perguntas-frequentes/imposto-de-renda/dirpf/pensao-alimenticia/o-que-mudou-para-quem"}
+  {"citacao": "ADI 5422 (STF, sessão virtual encerrada em 3/6/2022) - conferida", "url": "https://portal.stf.jus.br/noticias/verNoticiaDetalhe.asp?idConteudo=488372&ori=1"},
+  {"citacao": "ADI 5422, embargos de declaração rejeitados (STF, 3/10/2022) - conferida", "url": "https://portal.stf.jus.br/noticias/verNoticiaDetalhe.asp?idConteudo=495166"},
+  {"citacao": "ADI 5422, fala do relator sobre a dedução (STF, notícia 504462) - conferida", "url": "https://portal.stf.jus.br/noticias/verNoticiaDetalhe.asp?idConteudo=504462"},
+  {"citacao": "Lei 7.713/1988, art. 3º, § 1º - texto conferido pelo Rafael no Planalto em 17/11/2026", "url": "https://www.planalto.gov.br/ccivil_03/leis/l7713.htm"},
+  {"citacao": "Lei 9.250/1995, arts. 4º, II, 8º, II, f, e 8º, § 3º - texto conferido pelo Rafael no Planalto em 17/11/2026", "url": "http://www.planalto.gov.br/ccivil_03/leis/l9250compilado.htm"},
+  {"citacao": "CTN (Lei 5.172/1966), arts. 168 e 169 - texto conferido pelo Rafael no Planalto em 17/11/2026", "url": "https://planalto.gov.br/ccivil_03/leis/l5172compilado.htm"},
+  {"citacao": "Receita Federal, nota de 07/10/2022 (retificadora, dependente, PER/DCOMP) - PDF conferido pelo Rafael em 17/11/2026", "url": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2022/outubro/receita-federal-esclarece-a-nao-incidencia-do-imposto-de-renda-sobre-pensao-alimenticia"},
+  {"citacao": "Receita Federal, perguntas e respostas 'O que mudou para quem recebe pensão alimentícia?' (campo da declaração) - print conferido em 17/11/2026", "url": "https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/perguntas-frequentes/imposto-de-renda/dirpf/pensao-alimenticia/o-que-mudou-para-quem"},
+  {"citacao": "Receita Federal, Manual do Meu Imposto de Renda, Outros Rendimentos (beneficiário; pensão por morte fora da regra) - PDF conferido em 17/11/2026", "url": "https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/preenchimento/manual-mir/rendimentos/outros-rendimentos"}
 ]

@@ -130,6 +130,14 @@ fonte oficial, não cite.** Salve em `revisoes/<slug>.fontes.json`:
   página é dinâmica, abra com o Chromium do Playwright) ou no www2.camara.leg.br (texto atualizado
   da Câmara, que também traz os decretos). Leis de Minas Gerais: www.almg.gov.br e
   www.fazenda.mg.gov.br.
+- **Plano B pelo Chrome (regra do Rafael, 17/11/2026):** se o Planalto (ou outro site oficial, como o
+  gov.br da Receita) recusar a conexão da nuvem, e **se o Chrome do Rafael estiver aberto e as
+  ferramentas `mcp__claude-in-chrome__*` estiverem disponíveis** (leia antes a skill
+  `anthropic-skills:chrome-browser`), abra a página oficial pelo Chrome e confira o texto lá. Registre a
+  URL em `revisoes/<slug>.fontes.json` como fonte conferida. Se o Chrome não estiver disponível (comum
+  em execução agendada na nuvem), não insista: trate a citação como **não confirmada**, não a use no
+  artigo e avise no relatório que a conferência pelo Chrome ficou pendente. Isso vale para todas as
+  rotinas e áreas.
 
 **Dois nomes, não confunda:**
 - **seoSlug** (o endereço do post no Wix) = a palavra-chave exata, **com acentos**, em minúsculas e com

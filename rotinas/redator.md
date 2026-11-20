@@ -239,7 +239,7 @@ Indexação permitida. Excerpt = meta description.
    o caminho do arquivo, porque o Wix não lê o caminho e a imagem chega corrompida):
    - Pelo ExecuteWixAPI: `POST https://www.wixapis.com/site-media/v1/files/generate-upload-url` com
      `{"mimeType": "image/webp", "fileName": "capa-<slug>.webp", "private": false}` e guarde o `uploadUrl`.
-   - Pelo terminal: `curl -sS -X PUT -H "Content-Type: image/webp" --data-binary @areas/<ÁREA>/capas/capa-<slug>.webp "<uploadUrl>?filename=capa-<slug>.webp"`.
+   - Pelo terminal, **sempre com o script**: `scripts/upload_capa.sh "<uploadUrl>" areas/<ÁREA>/capas/capa-<slug>.webp`. Rode o comando sozinho, sem `cd`, `&&` nem `curl` solto antes: a regra de permissão do repositório só libera esse formato, e um `curl` com `-m`, aspas ou outros argumentos é barrado pelo classificador.
      A resposta traz `file.id` (ex.: `7e94f7_...~mv2.webp`), `operationStatus` (READY) e `hash`.
    - Confira que `hash` é igual ao `md5sum` do arquivo local. Se for diferente, ou se o upload falhar
      (por exemplo, 403 de rede), não insista: deixe a capa no repositório e avise no relatório.

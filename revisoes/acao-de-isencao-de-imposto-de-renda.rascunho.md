@@ -1,5 +1,7 @@
 # Ação de Isenção de Imposto de Renda por Doença Grave: O Que Levar, Quanto Tempo Leva e o Que Você Recebe no Fim (2026)
 
+[[IMAGEM: ação de isenção de imposto de renda]]
+
 _Por Dr. Rafael Rocha, Advogado especialista em isenção de Imposto de Renda – OAB/MG 193.958._
 
 O imposto de renda continua sendo descontado da sua aposentadoria ou pensão, mesmo depois do diagnóstico de uma doença grave? Então talvez a **ação de isenção de imposto de renda** seja o passo que falta. Na Justiça, pedimos duas coisas ao mesmo tempo: que o desconto pare e que o dinheiro já cobrado volte para você. A boa notícia é que esse caminho está previsto em lei e não termina na negativa de um balcão de atendimento.

@@ -1,0 +1,16 @@
+{
+  "status": "APROVADO",
+  "nota": 100,
+  "postId": "6c39d0c0-fa28-4b6e-b37b-7ad7f822acb9",
+  "titulo": "Execução Fiscal de IPTU: A Prefeitura Cobrou na Justiça? Veja se a Dívida É Sua e Como Evitar a Penhora do Imóvel (2026)",
+  "situacaoNoWix": "SCHEDULED",
+  "rodadas": 2,
+  "primeiraRodada": {"status": "APROVADO_COM_AVISOS", "nota": 98, "avisos": ["H5 subtítulos repetidos de artigos recentes: 'Por Que Contar com um Advogado Especialista em Execução Fiscal' e 'Preciso ir ao fórum?' (corrigidos)"]},
+  "estatisticas": {"palavras": 2615, "variacaoRitmoFrases": 0.5, "viciosIA": 0, "formulasDaCasa": ["Em linguagem clara", "Na prática"], "palavrasRepetidasDeArtigosRecentes": 37, "h2": 12, "perguntasFaq": 6, "linksInternos": 4, "ocorrenciasPalavraChave": 7, "citacoesJuridicas": 8},
+  "bloqueios": [],
+  "avisos": [],
+  "citacoesDetectadas": ["Lei 6.830/1980", "Lei 8.009/1990", "Súmula 399", "Súmula 392 do STJ", "Súmula 397 do STJ", "Súmula 392", "Súmula 393 do STJ", "Tema 122"],
+  "verificacoes": 59,
+  "aprovadas": 59,
+  "agendamento": {"scheduledPublishDate": "2026-11-26T12:00:00Z", "capaFileId": "7e94f7_707df4f153c0423aaf53f60f423320ef~mv2.webp"}
+}

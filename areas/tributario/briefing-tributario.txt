@@ -1,11 +1,3 @@
-FRENTE: III - Defesa em execução fiscal
-TEMA: A Prefeitura Cobrou o IPTU na Justiça: Posso Perder o Imóvel? E Se a Dívida Nem For Sua? (2026)
-PALAVRA-CHAVE: execução fiscal de IPTU
-DECISÃO DO LEITOR: essa cobrança de IPTU na Justiça está certa (imóvel vendido, IPTU já pago, prazo vencido) e o que faço para não perder o imóvel?
-BASE JURÍDICA: Lei 6.830/1980; CTN, art. 34 (quem é o contribuinte), art. 130 (dívida acompanha o imóvel) e art. 174 (prazo de 5 anos); Súmula 399/STJ; Lei 8.009/1990, art. 3º, IV (o bem de família não protege contra o IPTU do próprio imóvel - dizer isso com clareza); casos de imóvel vendido, antigo proprietário e devedor falecido - confirmar na pesquisa. Cobrança municipal (Juiz de Fora e MG) como exemplo.
-GATILHO: B - lacuna competitiva: "execução fiscal iptu" e "execução fiscal municipal" têm 100–1 mil buscas/mês (lance até R$ 6,24), com mais de 40 variações (imóvel vendido, antigo proprietário, já pago, devedor falecido, prescrição); "dívida ativa da prefeitura" tem 10 mil–100 mil (lance R$ 8,82) (Google Ads, 11/11/2026); o blog não tem post sobre dívida municipal.
-DATA DA SUGESTÃO: 2026-11-11
----
 FRENTE: II - Regularização de dívidas tributárias
 TEMA: Certidão Positiva com Efeito de Negativa: Como Conseguir a Certidão da Empresa Mesmo com Dívida (2026)
 PALAVRA-CHAVE: certidão positiva com efeito de negativa

@@ -12,7 +12,7 @@ Site Wix: "RRS Advocacia", siteId `333aa652-3f67-4300-9a63-f40b6407ce15`, member
 `7e94f763-40c3-4547-b890-4b950ca66dac`.
 
 **Fase atual: FASE 2 (ativada pelo Rafael em 11/11/2026).** Se o artigo passar em todas as
-condições do passo **P8-A**, agende a publicação com a janela de veto de 48 horas. Se faltar qualquer
+condições do passo **P8-A**, agende a publicação com a janela de veto de 24 horas. Se faltar qualquer
 condição, deixe como rascunho (comportamento da Fase 1) e explique no relatório. **Nunca publique na
 hora** (`UPDATE_PUBLISH` ou `/publish`): na Fase 2 o caminho é só o agendamento.
 
@@ -287,9 +287,10 @@ Indexação permitida. Excerpt = meta description.
    `python3 scripts/calibracao.py status --csv revisoes/calibracao.csv`. Se a semelhança média dos
    últimos 6 estiver abaixo de 95%, não agende (o P10 depois atualiza a planilha com os novos dados).
 
-**Data:** a primeira 9h (horário de Brasília) que esteja a **pelo menos 48 horas** da execução. Se cair
+**Data:** a primeira 9h (horário de Brasília) que esteja a **pelo menos 24 horas** da execução. Se cair
 em sábado ou domingo, use a segunda-feira às 9h. Exemplo: rotina na sexta às 18h20 → segunda às 9h.
 Em UTC, 9h de Brasília é `12:00:00Z`.
+Janela reduzida de 48h para 24h pelo Rafael em 25/11/2026; fim de semana continua sem publicação (público menor).
 
 **Como agendar** (formato confirmado no schema do Wix em 11/11/2026):
 `PATCH https://www.wixapis.com/blog/v3/draft-posts/{id}` com

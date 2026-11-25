@@ -6,7 +6,7 @@ publicação automática. As rotinas rodam no **Claude Code na nuvem**, direto n
 
 | | Fase 1 (09/11 a 11/11/2026) | Fase 2 (ATIVA desde 11/11/2026) |
 |---|---|---|
-| O que a rotina faz | Cria o rascunho, roda o revisor automático, corrige o que ele apontar e deixa o rascunho pronto | O mesmo e, se o revisor aprovar, **agenda a publicação** para 48h depois |
+| O que a rotina faz | Cria o rascunho, roda o revisor automático, corrige o que ele apontar e deixa o rascunho pronto | O mesmo e, se o revisor aprovar, **agenda a publicação** para 24h depois |
 | O que o Rafael faz | Abre o rascunho, ajusta o que quiser e publica | Só olha se quiser. Para vetar, cancela o agendamento |
 | Como medimos | Calibração: compara o rascunho entregue com o que foi publicado | Continua medindo |
 | Quando muda de fase | `python3 scripts/calibracao.py status --csv revisoes/calibracao.csv` diz **PRONTO PARA A FASE 2** (6 artigos seguidos publicados com 95% ou mais do texto igual e o título mantido) e o Rafael autoriza | — |
@@ -125,7 +125,7 @@ Ligada pelo Rafael em 11/11/2026, depois de `calibracao.py status` responder "PR
 (8 de 8 artigos com 95% ou mais de texto igual). O passo a passo que a rotina segue está em
 `rotinas/redator.md`, passo **P8-A**: só agenda se o revisor aprovar sem avisos pendentes, a capa
 estiver definida e **todas** as citações estiverem conferidas em fonte oficial; a publicação fica para
-a primeira 9h a pelo menos 48 horas da execução (fim de semana passa para segunda).
+a primeira 9h a pelo menos 24 horas da execução (fim de semana passa para segunda).
 
 Só ligar quando as duas condições forem verdadeiras:
 
@@ -138,7 +138,7 @@ Quando ligada, depois do R3 a rotina:
    a capa definida (aviso F5 resolvido). Desde 09/11/2026 a rotina envia a capa ao Wix e a define como
    imagem de capa do post (`rotinas/redator.md`, passo P7). O endereço `upload.wixmp.com` foi
    liberado na rede do ambiente Default para isso.
-2. Agenda a publicação para **48h depois, às 9h (horário de Brasília)**:
+2. Agenda a publicação para **24h depois, às 9h (horário de Brasília)**:
    `PATCH https://www.wixapis.com/blog/v3/draft-posts/{id}` com
    `{ "draftPost": { "id": "<id>", "memberId": "<memberId>" }, "action": "UPDATE_SCHEDULE", "scheduledPublishDate": "<data ISO>" }`
    (ação e campo confirmados no schema do Wix em 09/11/2026).
